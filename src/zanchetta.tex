@@ -1,0 +1,407 @@
+\documentclass{article}
+\usepackage[a1paper, landscape, total={76cm, 55cm}]{geometry}
+%\usepackage[a2paper, total={38cm, 55cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{midpage}
+\begin{center}
+
+\begin{genealogypicture}[
+%    timeflow=right,
+%    node size=3.5cm,
+%    node size=2.8cm,
+    processing=database,
+    database format=full,
+    node size=3.5cm,
+    level size=2.8cm,
+    level distance=6mm,
+    list separators hang=3mm,
+    name font=\bfseries,
+    surn code={\textcolor{black!50!black}{#1}},
+    place text={\newline}{},
+    date format=d month yyyy,
+    tcbset={male/.style={colframe=blue,colback=blue!5},
+    female/.style={colframe=red,colback=red!5}},
+    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+        halign=left,before upper=\parskip1pt,
+        \gtrDBsex,
+    },
+]
+sandclock
+{
+    child{
+        g[id=PietroXxxx]{
+            male,
+            name={Pietro \surn{Zanchetta}},
+            birth={(ca)1787}{},
+            marriage={Rivaletto Antonia}{},
+            death={1863/}{}
+        }
+        child{
+            g[id=DomenicoXxxx]{
+                male,
+                name={Domenico Bartolomeo \surn{Zanchetta}},
+                birth={(ca)1816}{S. Lucia di Piave (TV)},
+                marriage={1840-11-23}{Vazzola (TV) \newline Cattarina Migotto \\ \gtrsymMarried~18 Agosto 1855 \newline \hspace*{3mm} Venezia, parr. S. Stefano \newline \hspace*{3mm} Teresa Chemelli},
+                death={1863/1879}{},
+                profession={Domestico, facchino, fabbricante di birra, facchino di birreria}
+            }
+            c[id=MariaXxxx]{
+                female,
+                name={Maria \surn{Zanchetta}},
+                birth={1856/1857}{Verona},
+                marriage={Silvio Moressi}{},
+                death={1941-02-03}{Verona},
+                profession={Familiare},
+            }
+            c[id=AnnaLuigiaXxxx]{
+                female,
+                name={Anna Luigia \surn{Zanchetta}},
+                birth={1858-08-02}{Venezia, parr. S. Maria Gloriosa dei Frari},
+            }
+            child{
+                g[id=CelesteXxxx]{
+                    male,
+                    name={Celeste Tommaso \surn{Zanchetta}},
+                    birth={1860-12-18}{Venezia, parr. di Santa Maria Gloriosa dei Frari},
+                    marriage={1887-02-20}{Verona \newline Vittoria De Boni},
+                    death={1928-09-11}{Verona},
+                    profession={Fabbro, calderaio ferroviere},
+                }
+                c[id=Arnani1887]{
+                    male,
+                    name={Arnani \surn{Zanchetta}},
+                    birth={1887-09-09}{Verona},
+                    marriage={1935-02-16}{Verona, Cattedrale \newline Teresa Righetti}
+                }
+                child{
+                    g[id=Giuseppe1889]{
+                        male,
+                        name={Giuseppe \surn{Zanchetta}},
+                        birth={1889-09-20}{Verona},
+                        death={1960-04-25}{Verona}
+                    }
+                    c[id=CarloXxxx]{
+                        male,
+                        name={Carlo \surn{Zanchetta}},
+                        death={1925}{}
+                    }
+                }
+                c[id=Briccio1891]{
+                    male,
+                    name={Briccio \surn{Zanchetta}},
+                    birth={1891-04-28}{Verona},
+                }
+                child{
+                    g[id=Maria Teresa1892]{
+                        female,
+                        name={Maria Emma Teresa \surn{Zanchetta}},
+                        birth={1892-10-21}{Verona},
+                        marriage={1919-06-23}{Verona \newline Moressi Carlo}
+                    }
+                    c[id=MoressiSilvio]{
+                        male,
+                        name={Silvio \surn{Moressi}},
+                        marriage={Adriana Domenichini}{}
+                    }
+                }
+                child{
+                    g[id=Adele1894]{
+                        female,
+                        name={Adele \surn{Zanchetta}},
+                        birth={1894-05-30}{Verona},
+                        marriage={1922-05-20}{Verona \newline Cavaliere Ferruccio},
+                        death={1948-08-05}{}
+                    }
+                    c[id=Arianna1924]{
+                        female,
+                        name={Lidia Arianna \surn{Cavaliere}},
+                        birth={1924-07-21}{},
+                        death={2021-10-16}{},
+                    }
+                }
+                child{
+                    g[id=Giordano1895]{
+                        male,
+                        name={Giordano \surn{Zanchetta}},
+                        birth={1895-08-24}{Verona, Santo Stefano},
+                        marriage={1920-05-30}{Verona, Cattedrale \newline Emma Augusta Recchia},
+                        death={1930-05-20}{Verona},
+                        profession={Macchinista falegname},
+                    }
+                    child{
+                        g[id=Walter1921]{
+                            male,
+                            name={Walter \surn{Zanchetta}},
+                            birth={1921-02-18}{Verona},
+                            marriage={1952-10-09}{Verona, Cattedrale \newline Mariateresa Aldighieri},
+                            death={2008-02-13}{Verona},
+                            profession={Sarto},
+                        }
+                        child{
+                            g[id=Patrizia1953]{
+                                female,
+                                name={Patrizia \surn{Zanchetta}},
+                                birth={1953-03-08}{Verona},
+                                marriage={1975-06-14}{Verona, Cattedrale \newline Sergio Signorini},
+                                death={2019-11-17}{Negrar},
+                                profession={Impiegata ragioniera},
+                            }
+                            child{
+                                g[id=Claudio1975]{
+                                    male,
+                                    name={Claudio \surn{Signorini}},
+                                    birth={1975-09-09}{Verona},
+                                    marriage={2004-09-04}{Vigonovo \newline Beatrice Varotto},
+                                    profession={Programmatore, professore}
+                                }
+                                c[id=Maria2008]{
+                                    female,
+                                    name={Maria \surn{Signorini}},
+                                    birth={2008-06-28}{Padova},
+                                }
+                                c[id=Stefano2011]{
+                                    male,
+                                    name={Stefano \surn{Signorini}},
+                                    birth={2011-11-01}{Padova},
+                                }
+                                c[id=Caterina2015]{
+                                    female,
+                                    name={Caterina \surn{Signorini}},
+                                    birth={2015-11-20}{Padova},
+                                }
+                            }
+                        }
+                        child{
+                            g[id=Sergio1995]{
+                                male,
+                                name={Sergio \surn{Zanchetta}},
+                                birth={1955-01-05}{Verona},
+                                marriage={1983-02-26}{Verona, S. Zeno \newline Daniela Albertini},
+                                profession={Professore},
+                            }
+                            child{
+                                g[id=Giulia1987]{
+                                    female,
+                                    name={Giulia \surn{Zanchetta}},
+                                    birth={1987-05-26}{Negrar},
+                                    marriage={2018-09-22}{Verona, S. Rocco \newline Andrea Lorenzini},
+                                    profession={Ingegnere},
+                                }
+                                c[id=Federico2020]{
+                                    male,
+                                    name={Federico \surn{Lorenzini}},
+                                    birth={2020-11-23}{Negrar},
+                                }
+                            }
+                        }
+                    }
+                    child{
+                        g[id=Enzo1922]{
+                            male,
+                            name={Enzo \surn{Zanchetta}},
+                            birth={1922-10-08}{Verona},
+                            marriage={1950-11-18}{Yvonne Taccon},
+                            death={2013-04-17}{Verona},
+                            profession={Artigiano restauratore},
+                        }
+                        child{
+                            g[id=Tiziano1951]{
+                                male,
+                                name={Tiziano \surn{Zanchetta}},
+                                birth={1951-12-12}{},
+                                marriage={1978-09-23}{Lauretta Zampini},
+                            }
+                            child{
+                                g[id=SilviaXxxx]{
+                                    female,
+                                    name={Silvia \surn{Zanchetta}},
+                                    birth={1984-05-21}{},
+                                    marriage={2013-09-21}{Rossano Rossi},
+                                }
+                                c[id=Leonardo2019]{
+                                    male,
+                                    name={Leonardo \surn{Rossi}},
+                                    birth={2019-01-18}{},
+                                }
+                            }
+                            c[id=ClaudiaXxxx]{
+                                female,
+                                name={Claudia \surn{Zanchetta}},
+                                birth={1994-07-28}{},
+                            }
+                        }
+                        child{
+                            g[id=Daniela1953]{
+                                female,
+                                name={Daniela \surn{Zanchetta}},
+                                birth={1953-07-12}{},
+                                marriage={Salvatore Facchin}{},
+                            }
+                            c[id=SaraXxxx]{
+                                female,
+                                name={Sara \surn{Facchin}},
+                                birth={1979-05-03}{Bologna},
+                            }
+                        }
+                    }
+                    c[id=Giulio1924]{
+                        male,
+                        name={Giulio \surn{Zanchetta}},
+                        birth={1924-03-22}{Verona},
+                        marriage={1952-05-15}{Maria Teresa Bonizzato \\ \gtrsymMarried~16 Luglio 1980 \newline \hspace*{3mm} Bressanone (Comune) \newline \hspace*{3mm} 24 Maggio 2014 \newline \hspace*{3mm} Verona, S. Nicolò \newline \hspace*{3mm} Teresa Grechi},
+                        death={2018-06-23}{Milano}
+                    }
+                    child{
+                        g[id=Raffaella1928]{
+                            female,
+                            name={Raffaella \surn{Zanchetta}},
+                            birth={1928-02-07}{Verona},
+                            marriage={1951-09-15}{Renato Conca},
+                            death={2020-12-22}{Verona}
+                        }
+                        child{
+                            g[id=Tiziana1952]{
+                                female,
+                                name={Tiziana \surn{Conca}},
+                                birth={1952-11-13}{},
+                                marriage={1978-05-13}{Roberto Sponda},
+                            }
+                            c[id=Emma1978]{
+                                female,
+                                name={Emma \surn{Sponda}},
+                                birth={1978-12-08}{},
+                            }
+                            c[id=Valentina1981]{
+                                female,
+                                name={Valentina \surn{Sponda}},
+                                birth={1981-07-05}{},
+                            }
+                        }
+                        child{
+                            g[id=Roberto1955]{
+                                male,
+                                name={Roberto \surn{Conca}},
+                                birth={1955-03-15}{},
+                                marriage={1995-05-25}{Elena Giacomazzi},
+                            }
+                            c[id=Marta1987]{
+                                female,
+                                name={Marta \surn{Conca}},
+                                birth={1987-12-04}{},
+                                death={1995-02-25}{},
+                            }
+                            c[id=Matteo1994]{
+                                male,
+                                name={Matteo \surn{Conca}},
+                                birth={1994-05-03}{},
+                            }
+                        }
+                        child{
+                            g[id=Marco1964]{
+                                male,
+                                name={Marco \surn{Conca}},
+                                birth={1964-04-21}{},
+                                marriage={1991-06-01}{Elena Fasoli},
+                            }
+                            c[id=Aurora2003]{
+                                female,
+                                name={Aurora \surn{Conca}},
+                                birth={2003-10-17}{},
+                            }
+                        }
+                    }
+                }
+                c[id=Domenico1898]{
+                    male,
+                    name={Domenico \surn{Zanchetta}},
+                    birth={1898-01-26}{Verona},
+                }
+                child{
+                    g[id=Anna1901]{
+                        female,
+                        name={Anna \surn{Zanchetta}},
+                        birth={1901-09-13}{Verona},
+                        marriage={Agostino Bonato}{},
+                        death={1988-11-07}{}
+                    }
+                    child{
+                        g[id=Liliana1925]{
+                            female,
+                            name={Liliana \surn{Bonato}},
+                            birth={1925-07-13}{},
+                            marriage={1951-09-20}{Sante Avogaro},
+                            death={1977-05-05}{},
+                        }
+                        c[id=Annamaria1955]{
+                            female,
+                            name={Annamaria \surn{Avogaro}},
+                            birth={1955-01-14}{},
+                        }
+                    }
+                }
+                c[id=VittorioXxxx]{
+                    male,
+                    name={Vittorio \surn{Zanchetta}},
+                    birth={1905-05-08}{Verona},
+                    death={1955}{},
+                }
+            }
+            c[id=GiuseppeXxxx]{
+                male,
+                name={Giuseppe Sante \surn{Zanchetta}},
+                birth={1863-07-20}{Venezia, parr. S. Maria Gloriosa dei Frari},
+                profession={Contadino}
+            }
+        }
+        c[id=AntonioXxxx]{
+            male,
+            name={Antonio \surn{Zanchetta}},
+            birth={(ca)1820}{}
+        }
+        c[id=AngeloXxxx]{
+            male,
+            name={Angelo \surn{Zanchetta}},
+            birth={(ca)1825}{},
+            death={1903-02-14}{Vazzola (TV)}
+        }
+        c[id=CattarinaXxxx]{
+            female,
+            name={Cattarina \surn{Zanchetta}},
+            birth={1829-04-24}{S. Lucia di Piave (TV)},
+            marriage={1856-05-17}{Vazzola (TV) \newline Luigi Basei}
+        }
+        c[id=MariaXxxx]{
+            female,
+            name={Maria \surn{Zanchetta}},
+            birth={1829-04-24}{S. Lucia di Piave (TV)},
+            marriage={1863-04-27}{Vazzola (TV) \newline Francesco Biasi}
+            death={1879-10-02}{Vazzola (TV)}
+        }
+        c[id=GiuseppeXxxx]{
+            male,
+            name={Giuseppe \surn{Zanchetta}}
+        }
+    }
+}
+\end{genealogypicture}
+
+\end{center}
+\end{midpage}
+
+\end{document}
