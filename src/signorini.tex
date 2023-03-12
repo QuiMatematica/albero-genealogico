@@ -1,0 +1,300 @@
+\documentclass{article}
+\usepackage[a2paper, landscape, total={50cm, 38cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{midpage}
+\begin{center}
+
+\begin{genealogypicture}[
+    processing=database,
+    database format=full,
+    node size=3.5cm,
+    level size=2.8cm,
+    level distance=6mm,
+    list separators hang=3mm,
+    name font=\bfseries,
+    surn code={\textcolor{black!50!black}{#1}},
+    place text={\newline}{},
+    date format=d month yyyy,
+    tcbset={male/.style={colframe=blue,colback=blue!5},
+    female/.style={colframe=red,colback=red!5}},
+    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+        halign=left,before upper=\parskip1pt,
+        \gtrDBsex,
+    },
+]
+sandclock
+{
+    child{
+        g[id=Paolo16xx]{
+            male,
+            name={Paolo \surn{Signorini}},
+            marriage={Maddalena}{},
+        }
+        child{
+            g[id=Francesco1701]{
+                male,
+                name={Francesco \surn{Signorini}},
+                birth={1701-07-02}{Grezzana},
+                marriage={Margherita Filippi}{},
+            }
+            child{
+                g[id=Giacomo1723]{
+                    male,
+                    name={Giacomo \surn{Signorini}},
+                    birth={1723-06-02}{Grezzana},
+                    marriage={1754-11-28}{Alcenago \newline Bortola Bomberi},
+                }
+                c[id=Arcangelo1771]{
+                    male,
+                    name={Arcangelo \surn{Signorini}},
+                    birth={1771-04-21}{Grezzana},
+                    marriage={Paola Nicolis}{},
+                    death={1869-09-23}{Quinto}
+                }
+                child{
+                    g[id=Benedetto1774]{
+                        male,
+                        name={Benedetto \surn{Signorini}},
+                        birth={1774-07-26}{Grezzana},
+                        marriage={1802-02-22}{Pasqua Piasentini},
+                    }
+                    c[id=Maria1803]{
+                        female,
+                        name={Maria \surn{Signorini}},
+                        birth={1803-01-06}{Quinto},
+                    }
+                    c[id=Bortola1806]{
+                        female,
+                        name={Bortola \surn{Signorini}},
+                        birth={1806-04-05}{Grezzana}
+                    }
+                    c[id=Regine1815]{
+                        female,
+                        name={Regina \surn{Signorini}},
+                        birth={1815-03-16}{Quinto}
+                    }
+                    child{
+                        g[id=Luigi1818]{
+                            male,
+                            name={Luigi \surn{Signorini}},
+                            birth={1818-10-03}{Quinto},
+                            marriage={1838-02-13}{Maria Mosconi},
+                            death={1900-02-23}{Quinto},
+                        }
+                        c[id=Angelo1838]{
+                            male,
+                            name={Angelo \surn{Signorini}},
+                            birth={1838-11-28}{Quinto},
+                            death={1919}{}
+                        }
+                        c[id=Cesare1840]{
+                            male,
+                            name={Cesare \surn{Signorini}},
+                            birth={1840-06-19}{Quinto},
+                            death={1909}{}
+                        }
+                        c[id=Benedetto1842]{
+                            male,
+                            name={Benedetto \surn{Signorini}},
+                            birth={1842-02-27}{Quinto},
+                            death={1915}{}
+                        }
+                        child{
+                            g[id=Gerolamo1846]{
+                                male,
+                                name={Gerolamo \surn{Signorini}},
+                                birth={1846-02-07}{Quinto},
+                                marriage={1871-11-08}{Quinto - Teresa Martini},
+                                marriage={1895-07-14}{Verona - Margherita Rudari},
+                                marriage={1871-11-08}{Quinto \newline Teresa Martini \\ \gtrsymMarried~14 Luglio 1895 \newline \hspace*{3mm} Verona \newline \hspace*{3mm} Margherita Rudari},
+                                death={1905-07-05}{S. Maria in Stelle},
+                            }
+                            child{
+                                g[id=Albino1877]{
+                                    male,
+                                    name={Albino \surn{Signorini}},
+                                    birth={1877-02-12}{Grezzana},
+                                    marriage={1902-03-19}{Virginia Andreoli \\ \gtrsymMarried~18 Aprile 1920 \newline \hspace*{3mm} Elisabetta Andreoli},
+                                    death={1953-12-19}{}
+                                }
+                                c[id=Giuseppe1902]{
+                                    male,
+                                    name={Giuseppe \surn{Signorini}},
+                                    birth={1902}{},
+                                    death={1902}{},
+                                }
+                                c[id=Luigi1904]{
+                                    male,
+                                    name={Luigi \surn{Signorini}},
+                                    birth={1904}{},
+                                    death={1972}{},
+                                }
+                                c[id=MariaTeresa1905]{
+                                    female,
+                                    name={Maria Teresa \surn{Signorini}},
+                                    birth={1905}{},
+                                    death={1905}{},
+                                }
+                                child{
+                                    g[id=Pietro1908]{
+                                        male,
+                                        name={Pietro \surn{Signorini}},
+                                        birth={1908-05-29}{},
+                                        marriage={1940-05-25}{Novaglie \newline Teresa Antolini},
+                                        death={1980-07-24}{Verona},
+                                    }
+                                    c[id=Virginia1941]{
+                                        female,
+                                        name={Virginia \surn{Signorini}},
+                                        birth={1941-06-27}{},
+                                        death={1941-06-27}{},
+                                    }
+                                    c[id=Maria1942]{
+                                        female,
+                                        name={Maria \surn{Signorini}},
+                                        birth={1942-12-08}{},
+                                    }
+                                    child{
+                                        g[id=Sergio1945]{
+                                            male,
+                                            name={Sergio \surn{Signorini}},
+                                            birth={1945-03-18}{S. Maria in Stelle},
+                                            marriage={1975-06-14}{Verona \newline Patrizia Zanchetta},
+                                            death={2022-04-10}{Verona}
+                                        }
+                                        child{
+                                            g[id=Claudio1975]{
+                                                male,
+                                                name={Claudio \surn{Signorini}},
+                                                birth={1975-09-09}{Verona},
+                                                marriage={2004-09-04}{Vigonovo \newline Beatrice Varotto}
+                                            }
+                                            c[id=Maria2008]{
+                                                female,
+                                                name={Maria \surn{Signorini}},
+                                                birth={2008-06-28}{Padova},
+                                            }
+                                            c[id=Stefano2011]{
+                                                male,
+                                                name={Stefano \surn{Signorini}},
+                                                birth={2011-11-01}{Padova},
+                                            }
+                                            c[id=Caterina2015]{
+                                                female,
+                                                name={Caterina \surn{Signorini}},
+                                                birth={2015-11-20}{Padova},
+                                            }
+                                        }
+                                    }
+                                }
+                                c[id=Giulio1910]{
+                                    male,
+                                    name={Giulio \surn{Signorini}},
+                                    birth={1910}{},
+                                }
+                                c[id=Albino1913]{
+                                    male,
+                                    name={Albino \surn{Signorini}},
+                                    birth={1913}{},
+                                    death={1979}{},
+                                }
+                                c[id=Abramo1915]{
+                                    male,
+                                    name={Abramo \surn{Signorini}},
+                                    birth={1915}{},
+                                    death={2004}{},
+                                }
+                                c[id=Maria1918]{
+                                    female,
+                                    name={Maria \surn{Signorini}},
+                                    birth={1918}{},
+                                    death={1918}{},
+                                }
+                                c[id=MariaVirginia1920]{
+                                    female,
+                                    name={Maria Virginia \surn{Signorini}},
+                                    birth={1920}{},
+                                    death={1920}{},
+                                }
+                                c[id=MariaCarolina1923]{
+                                    female,
+                                    name={Maria Carolina \surn{Signorini}},
+                                    birth={1923}{},
+                                }
+                                c[id=Virginio1925]{
+                                    male,
+                                    name={Virginio \surn{Signorini}},
+                                    birth={1925}{},
+                                    death={2015}{},
+                                }
+                                c[id=Ottorino1929]{
+                                    male,
+                                    name={Ottorino \surn{Signorini}},
+                                    birth={1929}{},
+                                    death={1977}{},
+                                }
+                                c[id=Luigina1932]{
+                                    female,
+                                    name={Luigina \surn{Signorini}},
+                                    birth={1932}{},
+                                }
+                            }
+                            c[id=Abramo1879]{
+                                male,
+                                name={Abramo \surn{Signorini}},
+                                birth={1879}{},
+                            }
+                            c[id=Isidoro1882]{
+                                male,
+                                name={Isidoro \surn{Signorini}},
+                                birth={1882}{},
+                            }
+                            c[id=Maria1884]{
+                                female,
+                                name={Maria \surn{Signorini}},
+                                birth={1884}{},
+                            }
+                        }
+                        c[id=Vincenzo1848]{
+                            male,
+                            name={Vincenzo \surn{Signorini}},
+                            birth={1848-05-10}{Quinto},
+                        }
+                        c[id=Antonio1853]{
+                            male,
+                            name={Antonio \surn{Signorini}},
+                            birth={1853-01-18}{Quinto},
+                        }
+                    }
+                }
+            }
+            c[id=Giacoma1727]{
+                female,
+                name={Giacoma \surn{Signorini}},
+                birth={1727}{},
+            }
+        }
+    }
+}
+\end{genealogypicture}
+
+\end{center}
+\end{midpage}
+
+\end{document}

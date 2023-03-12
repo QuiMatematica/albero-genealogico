@@ -1,0 +1,653 @@
+\documentclass{article}
+\usepackage[a1paper, total={50cm, 76cm}]{geometry}
+%\usepackage[a2paper, landscape, total={50cm, 38cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{midpage}
+\begin{center}
+
+\begin{genealogypicture}[
+    processing=database,
+    database format=full,
+%    node size=3.5cm,
+%    level size=2.8cm,
+    timeflow=right,
+    node size=1.7cm,
+    level size=3.5cm,
+    level distance=6mm,
+    list separators hang=3mm,
+    name font=\bfseries,
+    surn code={\textcolor{black!50!black}{#1}},
+    place text={\newline}{},
+    date format=d month yyyy,
+    tcbset={male/.style={colframe=blue,colback=blue!5},
+    female/.style={colframe=red,colback=red!5}},
+    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+        halign=left,before upper=\parskip1pt,
+        \gtrDBsex,
+    },
+    add parent=Clementina1865 to salv_fam,
+]
+sandclock
+{
+    child{
+        g[id=Claudio1975]{
+            male,
+            name={Claudio \surn{Signorini}},
+            birth={1975-09-09}{Verona},
+        }
+        p[id=Beatrice1979]{
+            female,
+            name={Beatrice \surn{Varotto}},
+            birth={1979-02-10}{Padova},
+        }
+        c[id=Maria2008]{
+            female,
+            name={Maria \surn{Signorini}},
+            birth={2008-06-28}{Padova},
+        }
+        c[id=Stefano2011]{
+            male,
+            name={Stefano \surn{Signorini}},
+            birth={2011-11-01}{Padova},
+        }
+        c[id=Caterina2015]{
+            female,
+            name={Caterina \surn{Signorini}},
+            birth={2015-11-20}{Padova},
+        }
+    }
+    parent{
+        g[id=Sergio1945]{
+            male,
+            name={Sergio \surn{Signorini}},
+            birth={1945-03-18}{S. Maria in Stelle},
+            death={2022-04-10}{Verona},
+        }
+        parent{
+            g[id=Pietro1908]{
+                male,
+                name={Pietro \surn{Signorini}},
+                birth={1908-05-29}{},
+                death={1980-07-24}{Verona},
+            }
+            parent{
+                g[id=Albino1877]{
+                    male,
+                    name={Albino \surn{Signorini}},
+                    birth={1877-02-12}{Grezzana},
+                    death={1953-12-19}{}
+                }
+                parent{
+                    g[id=Gerolamo1846]{
+                        male,
+                        name={Gerolamo \surn{Signorini}},
+                        birth={1846-02-07}{Quinto},
+                        death={1905-07-05}{S. Maria in Stelle},
+                    }
+                    parent{
+                        g[id=Luigi1818]{
+                            male,
+                            name={Luigi \surn{Signorini}},
+                            birth={1818-10-03}{Quinto},
+                            death={1900-02-23}{Quinto},
+                        }
+                        parent{
+                            g[id=Benedetto1774]{
+                                male,
+                                name={Benedetto \surn{Signorini}},
+                                birth={1774-07-26}{Grezzana},
+                            }
+                            parent{
+                                g[id=Giacomo1723]{
+                                    male,
+                                    name={Giacomo \surn{Signorini}},
+                                    birth={1723-06-02}{Grezzana},
+                                }
+                                parent{
+                                    g[id=Francesco1701]{
+                                        male,
+                                        name={Francesco \surn{Signorini}},
+                                        birth={1701-07-02}{Grezzana},
+                                    }
+                                    parent{
+                                        g[id=Paolo16xx]{
+                                            male,
+                                            name={Paolo \surn{Signorini}},
+                                        }
+                                    }
+                                    parent{
+                                        g[id=Maddalenaxxxx]{
+                                            female,
+                                            name={Maddalena},
+                                        }
+                                    }
+                                }
+                                parent{
+                                    g[id=Margheritaxxxx]{
+                                        female,
+                                        name={Margherita \surn{Filippi}}
+                                    }
+                                }
+                            }
+                            parent{
+                                g[id=BortolaXxxx]{
+                                    female,
+                                    name={Bortola \surn{Bomberi}},
+                                    birth={1731-08-23}{Alcenago}
+                                }
+                                p[id=PaoloBomberi]{
+                                    male,
+                                    name={Paolo \surn{Bomberi}}
+                                }
+                                p[id=CaterinaDeNicolis] {
+                                    female,
+                                    name={Caterina \surn{De Nicolis}}
+                                }
+                            }
+                        }
+                        parent{
+                            g[id=Pasqua1781]{
+                                female,
+                                name={Pasqua \surn{Piasentini}},
+                                birth={1781-05-25}{Quinto di Valpantena},
+                                death={1855-07-31}{Quinto di Valpantena},
+                            }
+                            p[id=DomenicoXxxx]{
+                                male,
+                                name={Domenico \surn{Piasentini}}
+                            }
+                            p[id=DomenicaXxxx]{
+                                female,
+                                name={Domenica}
+                            }
+                        }
+                    }
+                    parent{
+                        g[id=MariaXxxx]{
+                            female,
+                            name={Maria \surn{Mosconi}},
+                            birth={1818-04-16}{Quinto di Valpantena},
+                            death={/1900}{}
+                        }
+                        parent{
+                            g[id=Giuseppe1793]{
+                                male,
+                                name={Giuseppe \surn{Mosconi}}
+                            }
+                            p[id=AngeloXxxx]{
+                                male,
+                                name={Angelo \surn{Mosconi}}
+                            }
+                            p[id=SantaXxxx]{
+                                female,
+                                name={Santa}
+                            }
+                        }
+                        parent{
+                            g[id=Emerenziana1793]{
+                                female,
+                                name={Emerenziana \surn{Gerardi}}
+                            }
+                            p[id=GiovanniXxxx]{
+                                male,
+                                name={Giovanni \surn{Gerardi}}
+                            }
+                            p[id=LuciaXxxx]{
+                                female,
+                                name={Lucia \surn{Zampieri}}
+                            }
+                        }
+                    }
+                }
+                parent{
+                    g[id=Teresa1848]{
+                        female,
+                        name={Teresa \surn{Martini}},
+                        birth={1848-02-08}{Quinto di Valpantena},
+                        death={1893-01-01}{Verona},
+                    }
+                    parent{
+                        g[id=Luigi1822]{
+                            male,
+                            name={Luigi \surn{Martini}},
+                            birth={1823-05-05}{Poiano},
+                            death={/1893}{},
+                        }
+                        p[id=NataleXxxx]{
+                            male,
+                            name={Natale \surn{Martini}},
+                            death={/1840}{},
+                        }
+                        parent{
+                            g[id=Elisabetta1795]{
+                                female,
+                                name={Elisabetta \surn{Adami}},
+                                birth={1795-03-25}{Poiano},
+                            }
+                            p[id=DomenicoXxxx]{
+                                male,
+                                name={Domenico \surn{Adami}}
+                            }
+                            p[id=TeresaXxxx]{
+                                female,
+                                name={Teresa \surn{Zenari}}
+                            }
+                        }
+                    }
+                    parent{
+                        g[id=Margherita1824]{
+                            female,
+                            name={Margherita \surn{Filippi}},
+                            birth={1824-03-21}{},
+                            death={/1893}{},
+                        }
+                        parent{
+                            g[id=Gaetano1792]{
+                                male,
+                                name={Gaetano \surn{Filippi}},
+                                birth={1792-03-26}{Quinto},
+                            }
+                            p[id=FilippoXxxx]{
+                                male,
+                                name={Filippo \surn{Filippi}}
+                            }
+                            p[id=MargheritaXxxx]{
+                                female,
+                                name={Margherita}
+                            }
+                        }
+                        parent{
+                            g[id=AnnaDomenica1800]{
+                                female,
+                                name={Anna Domenica \surn{Conati}},
+                                birth={1800-09-06}{Avesa},
+                            }
+                            p[id=GiovanniXxxx]{
+                                male,
+                                name={Giovanni \surn{Conati}}
+                            }
+                            p[id=FrancescaXxxx]{
+                                female,
+                                name={Francesca}
+                            }
+                        }
+                    }
+                }
+            }
+            parent{
+                g[id=VirginiaXxxx]{
+                    female,
+                    name={Virginia \surn{Andreoli}},
+                    birth={1883-08-06}{Novaglie},
+                    death={1918-01-21}{Novaglie},
+                }
+                parent{
+                    g[id=GiuseppeXxxx]{
+                        male,
+                        name={Giuseppe \surn{Andreoli}},
+                        birth={1854/1855}{Novaglie},
+                        death={1886-02-17}{Novaglie},
+                    }
+                    p[id=GiovanniBattistaXxxx]{
+                        male,
+                        name={Giovanni Battista \surn{Andreoli}},
+                        birth={/1846}{},
+                        death={1854/1886}{},
+                    }
+                    p[id=DomenicaXxxx]{
+                        female,
+                        name={Domenica \surn{Corso}},
+                        birth={/1846}{},
+                        death={1854/1886}{},
+                    }
+                }
+                parent[id=salv_fam]{
+                    g[id=CarolinaXxxx]{
+                        female,
+                        name={Carolina \surn{Salvagno}},
+                        birth={1860-04-07}{S. Maria in Stelle},
+                        death={1922-12-13}{S. Michele Extra},
+                    }
+                    p[id=PaoloXxxx]{
+                        male,
+                        name={Paolo \surn{Salvagno}},
+                        birth={/1856}{},
+                        death={1893}{S. Maria in Stelle},
+                    }
+                    p[id=LuciaXxxx]{
+                        female,
+                        name={Lucia \surn{Villafranca}}
+                    }
+                }
+            }
+        }
+        parent{
+            g[id=TeresaXxxx]{
+                female,
+                name={Teresa \surn{Antolini}},
+                birth={1908-10-02}{Quinto di Valpantena},
+                death={1984-01-27}{Verona},
+            }
+            parent{
+                g[id=Clementina1865]{
+                    female,
+                    name={Clementina \surn{Salvagno}},
+                    birth={1865}{Novaglie},
+                    death={1916-06-24}{Quinto di Valpantena},
+                }
+            }
+            parent{
+                g[id=Antonio1863]{
+                    male,
+                    name={Antonio \surn{Antolini}},
+                    birth={1863-05-03}{Poiano},
+                    death={1938-09-03}{Quinto di Valpantena},
+                }
+                p[id=PaoloXxxx]{
+                    male,
+                    name={Paolo \surn{Antolini}},
+                    birth={/1863}{},
+                    death={1894}{Quinto di Valpantena},
+                }
+                p[id=RosaXxxx]{
+                    female,
+                    name={Rosa \surn{Righetti}},
+                    death={/1888}{},
+                }
+            }
+        }
+    }
+    parent{
+        g[id=Patrizia1953]{
+            female,
+            name={Patrizia \surn{Zanchetta}},
+            birth={1953-03-08}{Verona},
+            death={2019-11-17}{Negrar di Valpolicella},
+        }
+        parent{
+            g[id=Walter1921]{
+                male,
+                name={Walter \surn{Zanchetta}},
+                birth={1921-02-18}{Verona},
+                death={2008-02-13}{Verona},
+            }
+            parent{
+                g[id=Giordano1895]{
+                    male,
+                    name={Giordano \surn{Zanchetta}},
+                    birth={1895-08-24}{Verona, S. Stefano},
+                    death={1930-05-20}{Verona},
+                }
+                parent{
+                    g[id=Celeste]{
+                        male,
+                        name={Celeste Tommaso \surn{Zanchetta}},
+                        birth={1860-12-18}{Venezia, parr. di Santa Maria Gloriosa dei Frari},
+                        death={1928-09-11}{Verona},
+                    }
+                    parent{
+                        g[id=Domenico]{
+                            male,
+                            name={Domenico Bartolomeo \surn{Zanchetta}},
+                            birth={(ca)1816}{S. Lucia di Piave (TV)},
+                            death={1863/1879}{}
+                        }
+                        parent{
+                            g[id=Pietro]{
+                                male,
+                                name={Pietro \surn{Zanchetta}},
+                                birth={(ca)1787}{},
+                                death={/1863}{}
+                            }
+                        }
+                        parent{
+                            g[id=Antonia]{
+                                female,
+                                name={Antonia \surn{Rivaletto}},
+                                birth={(ca)1792}{}
+                            }
+                        }
+                    }
+                    parent{
+                        g[id=Teresa]{
+                            female,
+                            name={Teresa \surn{Chemelli}},
+                            birth={1825-11-04}{Padergnone (TN)},
+                            death={1886-08-19}{Verona}
+                        }
+                        parent{
+                            g[id=Luigi]{
+                                male,
+                                name={Luigi \surn{Chemelli}},
+                                birth={1794/1795}{Padergnone (TN)},
+                                death={1855/1886}{},
+                            }
+                            p[id=Domenico]{
+                                male,
+                                name={Domenico \surn{Chemelli}},
+                                birth={Padergnone (TN)}{},
+                                death={1794/1822}{}
+                            }
+                            p[id=Teresa]{
+                                female,
+                                name={Teresa \surn{Zambaldi}},
+                                birth={Lasino (TN)}{},
+                                death={1822/}{}
+                            }
+                        }
+                        parent{
+                            g[id=Maria]{
+                                female,
+                                name={Maria \surn{Luterotti}},
+                                birth={1801/}{Dro (TN)},
+                                death={1855/1886}{}
+                            }
+                            p[id=AntonioLuterotti]{
+                                male,
+                                name={Antonio \surn{Luterotti}},
+                                birth={Dro (TN)}{},
+                                death={1822/}{}
+                            }
+                            p[id=Valentina]{
+                                female,
+                                name={Valentina},
+                                death={/1822}{}
+                            }
+                        }
+                    }
+                }
+                parent{
+                    g[id=Vittoria]{
+                        female,
+                        name={Vittoria \surn{De Boni}},
+                        birth={1861/1862}{Feltre},
+                        death={1954-08-23}{Verona},
+                    }
+                    p[id=Bonaventura]{
+                        male,
+                        name={Bonaventura \surn{De Boni}},
+                        death={1887/}{}
+                    }
+                    p[id=Maria]{
+                        female,
+                        name={Maria \surn{Pauletti}},
+                        death={/1887}{Feltre}
+                    }
+                }
+            }
+            parent{
+                g[id=Augusta1891]{
+                    female,
+                    name={Augusta \surn{Recchia}},
+                    birth={1891-04-25}{Verona},
+                    death={1962-12-15}{},
+                }
+                p[id=Domenico]{
+                    male,
+                    name={Domenico \surn{Recchia}},
+                    birth={1845-03-06}{},
+                    death={1927-09-03}{},
+                }
+                p[id=Luigia]{
+                    female,
+                    name={Luigia \surn{Turco}},
+                    birth={1848-05-28}{},
+                    death={1932-05-07}{},
+                }
+            }
+        }
+        parent{
+            g[id=Mariateresa1933]{
+                female,
+                name={Mariateresa \surn{Aldighieri}},
+                birth={1933-07-11}{},
+                death={2021-01-05}{Verona},
+            }
+            parent{
+                g[id=Oreste1900]{
+                    male,
+                    name={Oreste \surn{Aldighieri}},
+                    birth={1900-09-23}{Montecchia di Crosara},
+                    death={1970-03-30}{},
+                }
+                parent{
+                    g[id=Luigi]{
+                        male,
+                        name={Luigi \surn{Aldighieri}},
+                        birth={1871/1872}{Montecchia di Crosara},
+                    }
+                    parent{
+                        g[id=Paolo]{
+                            male,
+                            name={Paolo \surn{Aldighieri}},
+                            birth={1813/1814}{},
+                            death={1894-03-05}{Montecchia di Crosara}
+                        }
+                        p[id=Valente]{male, name={Valente \surn{Aldighieri}}}
+                        p[id=Giulia]{female, name={Giulia \surn{Marchi}}}
+                    }
+                    parent{
+                        g[id=Maria]{
+                            female,
+                            name={Maria Luigia \surn{Tessari}},
+                            birth={1840/1841}{Roma},
+                            death={1909-08-06}{Montecchia di Crosara},
+                        }
+                        p[id=MicheleXxx]{
+                            male,
+                            name={Michele \surn{Tessari}},
+                            death={/1909}{Roncà}
+                        }
+                        p[id=DomenicaXxx]{
+                            female,
+                            name={Domenica \surn{Mirandola}},
+                            death={/1909}{Roncà}
+                        }
+                    }
+                }
+                parent{
+                    g[id=Elisabetta]{
+                        female,
+                        name={Elisabetta \surn{Peruti}},
+                        birth={1880/1881}{}
+                    }
+                    p[id=xxxx]{male, name={IGNOTO}}
+                    p[id=xxxx]{female, name={IGNOTA}}
+                }
+            }
+            parent{
+                g[id=Santa1907]{
+                    female,
+                    name={Santa \surn{Cristofari}},
+                    birth={1907-07-07}{S. Giovanni Ilarione},
+                    death={1987-10-12}{Verona},
+                }
+                parent{
+                    g[id=DomenicoXxxx]{
+                        male,
+                        name={Domenico \surn{Cristofari}},
+                        birth={1868}{},
+                        death={1942-11-08}{S. Giovanni Ilarione}
+                    }
+                    parent{
+                        g[id=Gaetano]{
+                            male,
+                            name={Gaetano \surn{Cristofari}},
+                            birth={1831/1832}{S. Giovanni Ilarione},
+                            death={1915-04-22}{S. Giovanni Ilarione},
+                        }
+                        parent{
+                            g[id=GiovanniBattista]{
+                                male,
+                                name={Giovanni Battista \surn{Cristofari}},
+                                birth={1813/1814}{S. Giovanni Ilarione},
+                                death={1877-12-01}{S. Giovanni Ilarione},
+                            }
+                            p[id=Luigi]{
+                                male,
+                                name={Luigi \surn{Cristofari}},
+                                death={/1877}{}
+                            }
+                            p[id=Vincenza]{female, name={Vincenza \surn{Aldighieri}}}
+                        }
+                        p[id=Elisabetta]{female, name={Elisabetta \surn{Ciman}}}
+                    }
+                    p[id=Domenica]{female, name={Domenica \surn{Marcigaglia}}}
+                }
+                parent{
+                    g[id=Balsemina1874]{
+                        female,
+                        name={Balsemina \surn{Gambaretto}},
+                        birth={1874-07-13}{Contrà Gambaretti},
+                    }
+                    parent{
+                        g[id=GiacomoXxxx]{
+                            male,
+                            name={Giacomo \surn{Gambaretto}},
+                            birth={1844}{},
+                            death={/1900}{}
+                        }
+                        p[id=GiovanniXxxx]{
+                            male,
+                            name={Giovanni \surn{Gambaretto}},
+                            death={/1873}{},
+                        }
+                        p[id=AlessandraXxxx]{female, name={Alessandra \surn{Salgarolo}}}
+                    }
+                    parent{
+                        g[id=SantaXxxx]{
+                            female,
+                            name={Santa \surn{Gambaretto}},
+                            birth={1848/1849}{},
+                            death={/1900}{},
+                        }
+                        p[id=AlessandroXxxx]{male, name={Alessandro \surn{Gambaretto}}}
+                        p[id=SperanzaXxxx]{female, name={Speranza \surn{Gambaretto}}}
+                    }
+                }
+            }
+        }
+    }
+}
+\end{genealogypicture}
+
+\end{center}
+\end{midpage}
+
+\end{document}

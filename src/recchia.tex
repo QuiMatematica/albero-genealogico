@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[a4paper, landscape, total={26cm, 17cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{midpage}
+\begin{center}
+
+\begin{genealogypicture}[
+    processing=database,
+    database format=full,
+    node size=3.5cm,
+    level size=2.8cm,
+    level distance=6mm,
+    list separators hang=3mm,
+    name font=\bfseries,
+    surn code={\textcolor{black!50!black}{#1}},
+    place text={\newline}{},
+    date format=d month yyyy,
+    tcbset={male/.style={colframe=blue,colback=blue!5},
+    female/.style={colframe=red,colback=red!5}},
+    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+        halign=left,before upper=\parskip1pt,
+        \gtrDBsex,
+    },
+]
+sandclock
+{
+    child{
+        g[id=Domenico1845]{
+            male,
+            name={Domenico \surn{Recchia}},
+            birth={1845}{},
+            marriage={Luigia Turco}{},
+            death={1927}{}
+        }
+        child{
+            g[id=Emma1891]{
+                female,
+                name={Emma Augusta \surn{Recchia}},
+                birth={1891}{},
+                marriage={Giordano Zanchetta}{},
+                death={1962}{}
+            }
+        }
+        c[id=FrancescoXxxx]{
+            male,
+            name={Francesco \surn{Recchia}},
+            birth={Verona}{},
+            marriage={1914-04-19}{Verona \newline Giovanna Vanzo}
+        }
+        c[id=GaetanoXxxx]{
+            male,
+            name={Gaetano \surn{Recchia}},
+        }
+    }
+}
+\end{genealogypicture}
+
+\end{center}
+\end{midpage}
+
+\end{document}

@@ -1,0 +1,1324 @@
+\documentclass{article}
+\usepackage[a1paper, landscape, total={76cm, 52cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{center}
+        \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Bartolomeo] {
+                male,
+                name={Bartolomeo \surn{Zanchetta}},
+                marriage={Angela Paludetto}{},
+            }
+            child{
+                g[id=Domenico1798]{
+                    male,
+                    name={Domenico \surn{Zanchetta}},
+                    birth={1798-11-07}{Oderzo (TV)},
+                    marriage={1826-01-31}{Lucia Landini},
+                    profession={Cuoco},
+                }
+                c[id=Luigia1827]{
+                    female,
+                    name={Luigia \surn{Zanchetta}},
+                    birth={1827-10-15}{Oderzo(TV)},
+                }
+                c[id=Luigi1829]{
+                    male,
+                    name={Luigi Egidio \surn{Zanchetta}},
+                    birth={1829-10-10}{Oderzo (TV)},
+                    death={1837-06-03}{Verona},
+                }
+                c[id=Luigia1832]{
+                    female,
+                    name={Luigia \surn{Zanchetta}},
+                    birth={1832-10-15}{Portogruaro},
+                    profession={Stiratrice},
+                }
+                c[id=AngelaAggripinaFilumena1835]{
+                    female,
+                    name={Angela Aggripina Filumena \surn{Zanchetta}},
+                    birth={1835-11-27}{Verona},
+                    death={1841-11-21}{Verona},
+                }
+                child{
+                    g[id=Luigi1838]{
+                        male,
+                        name={Luigi \surn{Zanchetta}},
+                        birth={1838-01-21}{Verona},
+                        marriage={1871-11-06}{Elisa Zignoli},
+                        profession={Conciapelli},
+                    }
+                    c[id=Elisa1872]{
+                        female,
+                        name={Elisa \surn{Zanchetta}},
+                        birth={1872-07-09}{},
+                    }
+                    c[id=Giuseppa1872]{
+                        female,
+                        name={Giuseppa \surn{Zanchetta}},
+                        birth={1872-07-09}{},
+                    }
+                    c[id=Giuseppe1877]{
+                        male,
+                        name={Giuseppe \surn{Zanchetta}},
+                        birth={1877-11-18}{},
+                    }
+                    c[id=Enrico1883]{
+                        male,
+                        name={Enrico \surn{Zanchetta}},
+                        birth={1883-06-06}{},
+                    }
+                }
+                c[id=Chiara1840]{
+                    female,
+                    name={Chiara \surn{Zanchetta}},
+                    birth={1840-06-09}{Verona},
+                }
+                c[id=Anna1840]{
+                    female,
+                    name={Anna \surn{Zanchetta}},
+                    birth={1840-06-09}{Verona},
+                    death={1843-12-07}{Verona},
+                }
+                c[id=Elisabetta1849]{
+                    female,
+                    name={Elisabetta \surn{Zanchetta}},
+                    birth={1843-10-18}{Verona},
+                    marriage={1863-02-16}{Pietro Haller},
+                }
+                c[id=Giuseppa1846]{
+                    female,
+                    name={Giuseppa \surn{Zanchetta}},
+                    birth={1846-01-04}{},
+                }
+            }
+            child{
+                g[id=Pietro]{
+                    male,
+                    name={Pietro \surn{Zanchetta}},
+                    birth={1801-07-29}{Oderzo (TV)},
+                    marriage={1830-09-06}{Oderzo (TV) \newline Maria Dente},
+                }
+                c[id=Giuseppe1833]{
+                    male,
+                    name={Giuseppe \surn{Zanchetta}},
+                    birth={1833-09-21}{ODerzo (TV)},
+                    death={1843-03-26}{Verona, S. Stefano},
+                }
+                c[id=Domenico1836]{
+                    male,
+                    name={Domenico \surn{Zanchetta}},
+                    birth={1836-12-18}{Oderzo (TV)},
+                    death={1837-12-08}{Verona},
+                }
+                c[id=Angela1838]{
+                    female,
+                    name={Angela \surn{Zanchetta}},
+                    birth={1838-09-24}{Verona},
+                    death={1849-05-09}{Verona, S. Stefano},
+                }
+                c[id=AngelaDomencia1841]{
+                    female,
+                    name={Angela \surn{Zanchetta}},
+                    birth={1841-02-05}{Verona},
+                    death={1843-02-12}{Verona, S. Stefano},
+                }
+                c[id=Agostino1842]{
+                    male,
+                    name={Agostino \surn{Zanchetta}},
+                    birth={1842-10-15}{Verona},
+                }
+                c[id=Augusto1842]{
+                    male,
+                    name={Augusto \surn{Zanchetta}},
+                    birth={1842-09-18}{Verona},
+                    marriage={1868-09-26}{Milano \newline Mariella Marazzi},
+                }
+                c[id=AnnaAntonia1846]{
+                    female,
+                    name={Anna Antonia \surn{Zanchetta}},
+                    birth={1846-06-15}{},
+                    death={1848-11-11}{Verona, S. Nicolò},
+                }
+                c[id=Aurelio1847]{
+                    male,
+                    name={Aurelio \surn{Zanchetta}},
+                    birth={1847-09-20}{Verona, S. Paolo},
+                }
+            }
+            child{
+                g[id=Felice1804]{
+                    male,
+                    name={Felice Giovanni Battista \surn{Zanchetta}},
+                    birth={1804-01-09}{Oderzo (TV)},
+                    marriage={Maria Giusti}{},
+                    profession={Falegname, domestico},
+                }
+                c[id=Clementina1832]{
+                    female,
+                    name={Clementina \surn{Zanchetta}},
+                    birth={1831-12-16}{Lavagno},
+                    marriage={1860-02-01}{Luigi Graziani},
+                }
+                c[id=Bortolo1834]{
+                    male,
+                    name={Bortolo \surn{Zanchetta}},
+                    birth={1835-06-31}{Lavagno},
+                    profession={Guardiano della strada ferrata, facchino}
+                }
+                c[id=GiovanniBattista1835]{
+                    male,
+                    name={Giovanni Battista \surn{Zanchetta}},
+                    birth={1844-05-06}{Lavagno},
+                }
+                c[id=GiuseppeZeno1841]{
+                    male,
+                    name={Giuseppe Zeno \surn{Zanchetta}},
+                    birth={1841}{}
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+\end{center}
+
+\newpage
+
+\begin{figure}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=LuigiXxxx]{
+                male,
+                name={Luigi \surn{Zanchetta}},
+                marriage={Amalia Vicentini}{},
+            }
+            c[id=AnnaMariaXxxx]{
+                female,
+                name={Anna Maria \surn{Zanchetta}},
+                birth={1915-07-22}{Zinella (BO)},
+                marriage={1946-09-26}{Zinella (BO) \newline Benvenuto Angelo Saggiorato},
+                death={1959-01-28}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=ArmelinaXxxx]{
+                female,
+                name={Armelina \surn{Zanchetta}},
+                birth={1903}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=CarolinaXxxx] {
+                female,
+                name={Carolina \surn{Zanchetta}},
+                birth={1914}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=GiovanniBattistaXxxx]{
+                male,
+                name={Giovanni Battista \surn{Zanchetta}},
+                marriage={Catterina Marani}{},
+            }
+            child{
+                g[id=Giacomo1792] {
+                    male,
+                    name={Giacomo \surn{Zanchetta}},
+                    birth={1792-09-13}{S. Pietro di Legnago},
+                    marriage={1835-03-01}{Rosa Da Campo},
+                    profession={Possidente},
+                }
+                c[id=AnnaMaria1837]{
+                    female,
+                    name={Anna Maria \surn{Zanchetta}},
+                    birth={1837-02-03}{S. Maria di Zevio},
+                    marriage={1856-01-21}{Luigi Guelmi},
+                }
+                c[id=Ginevra1839]{
+                    female,
+                    name={Ginevra \surn{Zanchetta}},
+                    birth={1839-08-27}{S. Maria di Zevio},
+                    marriage={1861-10-21}{Gaetano Bozzi},
+                    death={1869-10-21}{Verona, S. Eufemia},
+                }
+                c[id=Giuseppe1840]{
+                    female,
+                    name={Giuseppe \surn{Zanchetta}},
+                    birth={1840-11-18}{S. Maria di Zevio},
+                }
+                c[id=Catterina1846]{
+                    female,
+                    name={Catterina \surn{Zanchetta}},
+                    birth={1846-01-20}{Verona},
+                    marriage={Gaetano Grigoletti}{},
+                    death={1936-05-06}{Verona},
+                    profession={Pensionata ferroviaria},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=DomenicoXxxx] {
+                male,
+                name={Domenico \surn{Zanchetta}},
+                marriage={Anna Scatton}{},
+            }
+            child{
+                g[id=EugenioXxxx]{
+                    male,
+                    name={Eugenio \surn{Zanchetta}},
+                    birth={1878/1879}{Oderzo (TV)},
+                    marriage={Maria Brazzoli}{},
+                    death={1940-08-02}{Verona},
+                }
+                c[id=MarioXxxx]{
+                    male,
+                    name={Mario \surn{Zanchetta}},
+                    birth={1909/1910}{},
+                    profession={Sergente},
+                }
+                c[id=UmbertoXxxx]{
+                    male,
+                    name={Umberto \surn{Zanchetta}},
+                    birth={1909}{Verona},
+                    marriage={1939-01-23}{Verona, S. Giuseppe \newline Eleonora Falezza}
+                    profession={Maestro},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=AngeloXxxx] {
+                male,
+                name={Angelo \surn{Zanchetta}},
+                marriage={Rosa Macini}{},
+            }
+            c[id=GiuseppinaXxxx]{
+                female,
+                name={Giuseppina \surn{Zanchetta}},
+                birth={1886/1887}{Verona, Montorio},
+                marriage={Dario Nobile}{},
+                death={1935-05-14}{Verona},
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=LuigiXxxx]{
+                male,
+                name={Luigi \surn{Zanchetta}},
+                birth={1904}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=LuigiXxxx]{
+                male,
+                name={Luigi \surn{Zanchetta}},
+                birth={1918}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=MarinoXxxx] {
+                male,
+                name={Marino \surn{Zanchetta}},
+                marriage={Orsola Battiston}{},
+            }
+            c[id=LuigiaXxxx]{
+                female,
+                name={Luigia \surn{Zanchetta}},
+                birth={1913/1914}{Pederobba (TV)},
+                marriage={1939-06-21}{Verona, S. Stefano \newline Riccardo Adomelli},
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Mario]{
+                male,
+                name={Mario \surn{Zanchetta}},
+                birth={1911}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=OsvaldoXxxx]{
+                male,
+                name={Osvaldo \surn{Zanchetta}},
+                birth={1908}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=RaffaellaXxxx]{
+                female,
+                name={Raffaella \surn{Zanchetta}},
+                birth={1910}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=RaffaelloXxxx]{
+                male,
+                name={Raffaello \surn{Zanchetta}},
+                birth={1906}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=RomoXxxx]{
+                male,
+                name={Romo \surn{Zanchetta}},
+                birth={1914}{Verona}
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=GiuseppeXxxx] {
+                male,
+                name={Giuseppe \surn{Zanchetta}},
+                marriage={Elisabetta Costerman}{},
+                profession={Ferroviere},
+            }
+            c[id=EnricoXxxx]{
+                male,
+                name={Enrico \surn{Zanchetta}},
+                birth={1944-03-29}{Verona},
+                death={1944-03-30}{Verona},
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=GiovanniBattista] {
+                male,
+                name={Giovanni Battista \surn{Zanchetta}},
+                marriage={Rosa Berioli}{},
+            }
+            c[id=Maria1780]{
+                female,
+                name={Maria \surn{Zanchetta}},
+                birth={1780-03-27}{Verona},
+            }
+            c[id=Candida1788]{
+                female,
+                name={Candida \surn{Zanchetta}},
+                birth={1787-07-21/1788-06-21}{Verona, S. Stefano},
+                marriage={Gualfardo Castellani}{1810-08-15},
+                death={1853-03-15}{Verona},
+            }
+            c[id=Anna1799]{
+                female,
+                name={Anna \surn{Zanchetta}},
+                birth={1799-04-02}{Verona},
+                marriage={Giacomo Slavier \\ \gtrsymMarried~4 Novembre 1830 \\ \hspace*{3mm} Gaetano Giomo}{},
+                death={1865-03-15}{},
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Battista] {
+                male,
+                name={Battista \surn{Zanchetta}},
+                marriage={Margherita Giona}{},
+            }
+            c[id=Angela]{
+                female,
+                name={Angela \surn{Zanchetta}},
+                birth={1782-01-19}{Verona},
+                marriage={1801-04-12}{Verona},
+                profession={Lavoratrice in seta},
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Giovanni] {
+                male,
+                name={Giovanni \surn{Zanchetta}},
+                marriage={Domenica Tessadirlo}{},
+            }
+            child{
+                g[id=Donato] {
+                    male,
+                    name={Donato \surn{Zanchetta}},
+                    marriage={1804-04-23}{Elisabetta Gioan},
+                    birth={1780-12-20}{Mori di Rovereto},
+                    death={1843-07-20}{},
+                    profession={Scartezzino},
+                }
+                c[id=Domenica]{
+                    female,
+                    name={Domenica \surn{Zanchetta}},
+                    birth={1805-04-11}{Verona},
+                    marriage={1826-09-17}{Luigi De Michelli},
+                    death={1859-12-16}{},
+                }
+                c[id=Maria]{
+                    female,
+                    name={Maria \surn{Zanchetta}},
+                    birth={1809-03-05}{Mori di Rovereto},
+                    marriage={1830-02-22}{Giuseppe Liotti},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Felice] {
+                male,
+                name={Felice \surn{Zanchetta}},
+                marriage={Orsola Zamperini}{},
+            }
+            child{
+                g[id=Giuseppe] {
+                    male,
+                    name={Giuseppe \surn{Zanchetta}},
+                    birth={1773-04-12}{Verona},
+                    marriage={1823-01-30}{Teresa Baldessarini},
+                    death={1842-09-04}{},
+                    profession={Possidente},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Giovanni] {
+                male,
+                name={Giovanni \surn{Zanchetta}},
+                marriage={Elisabetta Piccoli}{},
+            }
+            child{
+                g[id=Maddalena] {
+                    female,
+                    name={Maddalena \surn{Zanchetta}},
+                    birth={1763}{Verona},
+                    marriage={Luigi Righi}{},
+                    profession={Cucitrice},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Giuseppe] {
+                male,
+                name={Giuseppe \surn{Zanchetta}},
+                marriage={Teresa Bergamini}{},
+            }
+            child{
+                g[id=Rosa] {
+                    female,
+                    name={Rosa \surn{Zanchetta}},
+                    birth={1801-03-06}{},
+                    marriage={1822-11-11}{Gaetano Gragnato},
+                    death={1864-11-04}{Negrar},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=GiovanniBattista] {
+                male,
+                name={Giovanni Battista \surn{Zanchetta}},
+                marriage={Maria Brentelli}{},
+            }
+            child{
+                g[id=Giovanni1824]{
+                    male,
+                    name={Giovanni \surn{Zanchetta}},
+                    birth={1824-08-04}{Fonzaso},
+                    marriage={1852-05-13}{Teresa Venzon},
+                }
+                c[id=Giuseppe1853]{
+                    male,
+                    name={Giuseppe \surn{Zanchetta}},
+                    birth={1853-08-19}{Fonzaso},
+                }
+            }
+            child{
+                g[id=Angelo1828] {
+                    male,
+                    name={Angelo \surn{Zanchetta}},
+                    birth={1828-09-14}{Belluno},
+                    marriage={1860-09-22}{Marianna Adami},
+                    profession={Famiglio},
+                }
+                c[id=Anna1860]{
+                    female,
+                    name={Anna \surn{Zanchetta}},
+                    birth={1860-08-18}{},
+                }
+                c[id=Fortunato1862]{
+                    male,
+                    name={Fortunato \surn{Zanchetta}},
+                    birth={1862-08-11}{},
+                }
+                c[id=Giuseppe1864]{
+                    male,
+                    name={Giuseppe \surn{Zanchetta}},
+                    birth={1864-01-07}{},
+                }
+                c[id=Teresa1866]{
+                    female,
+                    name={Teresa \surn{Zanchetta}},
+                    birth={1866-11-21}{},
+                }
+                c[id=Angelo1868]{
+                    male,
+                    name={Angelo \surn{Zanchetta}},
+                    birth={1868-04-04}{},
+                }
+                c[id=CarloXxxx]{
+                    male,
+                    name={Carlo \surn{Zanchetta}},
+                    birth={1867/1868}{},
+                    death={1934-11-10}{Verona},
+                    profession={Operaio},
+                }
+                c[id=Giuditta1869]{
+                    female,
+                    name={Giuditta \surn{Zanchetta}},
+                    birth={1869-10-18}{},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Antonio] {
+                male,
+                name={Antonio \surn{Zanchetta}},
+                marriage={Orsola Beghin}{},
+            }
+            child{
+                g[id=Francesco] {
+                    male,
+                    name={Francesco \surn{Zanchetta}},
+                    birth={1799-09-20}{Valdobiadene},
+                    marriage={1853-03-16}{Teresa Molinari},
+                    death={1859-10-02}{Verona},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g[id=Andrea] {
+                male,
+                name={Andrea \surn{Zanchetta}},
+                marriage={Maddalena Viecili}{},
+            }
+            child{
+                g[id=Pietro] {
+                    male,
+                    name={Pietro \surn{Zanchetta}},
+                    birth={1822}{Fonzaso (BL)},
+                    profession={Mugnaio}
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\end{figure}
+
+
+
+\end{document}

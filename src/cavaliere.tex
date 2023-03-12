@@ -1,0 +1,190 @@
+\documentclass{article}
+%\usepackage[a1paper, landscape, total={76cm, 55cm}]{geometry}
+%\usepackage[a2paper, landscape, total={38cm, 55cm}]{geometry}
+\usepackage[a3paper, landscape, total={38cm, 25cm}]{geometry}
+%\usepackage[a4paper, landscape, total={25cm, 17cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{midpage}
+\begin{center}
+
+\begin{genealogypicture}[
+%    timeflow=right,
+%    node size=3.5cm,
+%    node size=2.8cm,
+    processing=database,
+    database format=full,
+    node size=3.8cm,
+    level size=2.8cm,
+    level distance=6mm,
+    list separators hang=3mm,
+    name font=\bfseries,
+    surn code={\textcolor{black!50!black}{#1}},
+    place text={\newline}{},
+    date format=d month yyyy,
+    tcbset={male/.style={colframe=blue,colback=blue!5},
+    female/.style={colframe=red,colback=red!5}},
+    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+        halign=left,before upper=\parskip1pt,
+        \gtrDBsex,
+    },
+]
+sandclock
+{
+    child{
+        g[id=Angelo]{
+            male,
+            name={Angelo \surn{Cavaliere}},
+            marriage={1852-02-08}{Angela Zampollo}
+        }
+        child{
+            g[id=Sante]{
+                male,
+                name={Sante \surn{Cavaliere}},
+                birth={1854-10-03}{Lusia di Barbona (PD)},
+                marriage={1855-10-18}{Adelaide Battanello},
+                death={1938-12-12}{Verona},
+            }
+            c[id=AmabileMaria0]{
+                female,
+                name={Amabile Maria \surn{Cavaliere}},
+                birth={1879-08-02}{Lusia di Barbona (PD)},
+                death={1900-01-06}{},
+            }
+            child{
+                g[id=Ferruccio]{
+                    male,
+                    name={Ferruccio \surn{Cavaliere}},
+                    birth={1891-11-27}{Verona},
+                    marriage={1894-05-30}{Adele Zanchetta},
+                    death={1968-11-10}{Verona},
+                }
+                c[id=Arianna]{
+                    female,
+                    name={Lidia Arianna \surn{Cavaliere}},
+                    birth={1924-07-21}{Verona},
+                    death={2021-10-16}{Verona},
+                }
+            }
+            child{
+                g[id=Arturo]{
+                    male,
+                    name={Arturo \surn{Cavaliere}},
+                    birth={1886-06-16}{Barbona ?},
+                    marriage={1919-05-10}{Chiara Turri},
+                    death={1971-08-03}{Rovereto}
+                }
+                child{
+                    g[id=Luigi]{
+                        male,
+                        name={Luigi \surn{Cavaliere}},
+                        birth={1920-03-28}{Cittadella},
+                        marriage={1952-05-10}{Renata Walcher},
+                        death={2016-09-28}{Rovereto},
+                    }
+                    child{
+                        g[id=Paolo]{
+                            male,
+                            name={Paolo \surn{Cavaliere}},
+                            birth={1953-03-08}{Rovereto},
+                            marriage={1988-10-29}{Paola Parisi},
+                        }
+                        c[id=Chiara]{
+                            female,
+                            name={Chiara \surn{Cavaliere}},
+                            birth={1991-08-17}{Trento},
+                        }
+                        c[id=Luca]{
+                            male,
+                            name={Luca \surn{Cavaliere}},
+                            birth={1995-07-06}{Trento},
+                        }
+                    }
+                    c[id=MariaGabriella]{
+                        female,
+                        name={Maria Gabriella \surn{Cavaliere}},
+                        birth={1956-03-17}{Rovereto},
+                    }
+                }
+                child{
+                    g[id=Aldo]{
+                        male,
+                        name={Aldo \surn{Cavaliere}},
+                        birth={1922-07-07}{Cittadella},
+                        marriage={1954-07-31}{Lidia Bazzanella},
+                        death={1997-06-27}{Milano},
+                    }
+                    c[id=Roberto]{
+                        male,
+                        name={Roberto \surn{Cavaliere}},
+                        birth={1960-04-29}{Milano},
+                    }
+                }
+                child{
+                    g[id=Carmela]{
+                        female,
+                        name={Carmela \surn{Cavaliere}},
+                        birth={1923-03-01}{Rovereto},
+                        death={2017-08-31}{Rovereto},
+                    }
+                    c[id=Aldo]{
+                        male,
+                        name={Aldo \surn{Gilberti}},
+                    }
+                }
+            }
+        }
+        child{
+            g[id=Giovanni]{
+                male,
+                name={Giovanni \surn{Cavaliere}},
+                birth={1858-04-04/1858-04-05}{Lusia di Barbona (PD)},
+                death={ante 1913}{Brasile},
+            }
+        }
+        child{
+            g[id=Olga]{
+                female,
+                name={Olga \surn{Cavaliere}},
+                birth={1862}{Lusia di Barbona (PD)},
+                marriage={Luigi Pellisseri}{},
+                death={1919-02-19}{Volterra},
+            }
+        }
+        child{
+            g[id=Angelo]{
+                male,
+                name={Angelo \surn{Cavaliere}},
+                birth={1863-08-30}{Lusia di Barbona (PD)},
+                marriage={Ancella Cavaliere}{},
+                death={Brasile}{},
+            }
+            c[id=Eustenia]{
+                female,
+                name={Eustenia \surn{Cavaliere}},
+                marriage={1928-09-05}{Bragança \newline Jurandir Ferraz},
+            }
+        }
+    }
+}
+\end{genealogypicture}
+
+\end{center}
+\end{midpage}
+
+\end{document}
