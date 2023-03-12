@@ -1,0 +1,163 @@
+\documentclass{article}
+%\usepackage[a1paper, landscape, total={76cm, 55cm}]{geometry}
+\usepackage[a2paper, landscape, total={38cm, 55cm}]{geometry}
+%\usepackage[a3paper, landscape, total={38cm, 25cm}]{geometry}
+%\usepackage[a4paper, landscape, total={25cm, 17cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{midpage}
+\begin{center}
+
+\begin{genealogypicture}[
+%    timeflow=right,
+%    node size=3.5cm,
+%    node size=2.8cm,
+    processing=database,
+    database format=full,
+    node size=3.8cm,
+    level size=2.8cm,
+    level distance=6mm,
+    list separators hang=3mm,
+    name font=\bfseries,
+    surn code={\textcolor{black!50!black}{#1}},
+    place text={\newline}{},
+    date format=d month yyyy,
+    tcbset={male/.style={colframe=blue,colback=blue!5},
+    female/.style={colframe=red,colback=red!5}},
+    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+        halign=left,before upper=\parskip1pt,
+        \gtrDBsex,
+    },
+]
+sandclock
+{
+    child{
+        g{
+            male,
+            name={Paolo \surn{Antolini}},
+            birth={/1863}{},
+            marriage={?}{Rosa Righetti},
+            death={1894}{Quinto di Valpantena},
+        }
+        child{
+            g{
+                male,
+                name={Antonio \surn{Antolini}},
+                birth={1863-05-03}{Poiano (Quinto)},
+                marriage={1887-03-13}{Clementina Salvagno},
+                death={1938-09-03}{Quinto di Valpantena}
+            }
+            child{
+                g{
+                    male,
+                    name={Silvino \surn{Antolini}},
+                    birth={1888-04-23}{},
+                }
+            }
+            child{
+                g{
+                    male,
+                    name={Narciso Lorenzo \surn{Antolini}},
+                    birth={1889-10-29}{},
+                    death={1958}{},
+                }
+            }
+            child{
+                g{
+                    female,
+                    name={Rosa \surn{Antolini}},
+                    birth={1891}{},
+                }
+            }
+            child{
+                g{
+                    female,
+                    name={Virginia \surn{Antolini}},
+                    birth={1893-05-11}{},
+                    death={1955}{},
+                }
+            }
+            child{
+                g{
+                    female,
+                    name={Lucia \surn{Antolini}},
+                    birth={1897-04-09}{},
+                    death={1970}{},
+                }
+            }
+            child{
+                g{
+                    female,
+                    name={Carolina \surn{Antolini}},
+                    birth={1899-02-24}{},
+                }
+            }
+            child{
+                g{
+                    male,
+                    name={Valentino \surn{Antolini}},
+                    birth={1901-02-11}{},
+                    death={1968}{},
+                }
+            }
+            child{
+                g{
+                    male,
+                    name={Giovanni \surn{Antolini}},
+                    birth={1902-06-08}{},
+                    death={1962}{},
+                }
+            }
+            child{
+                g{
+                    female,
+                    name={Teresa \surn{Antolini}},
+                    birth={1908-10-02}{Quinto di Valpantena},
+                    marriage={1940-05-25}{Pietro Signorini},
+                    death={1984-01-27}{Verona},
+                }
+            }
+            child{
+                g{
+                    female,
+                    name={Pina \surn{Antolini}},
+                }
+            }
+            child{
+                g{
+                    female,
+                    name={Maria \surn{Antolini}},
+                    death={1970}{}
+                }
+            }
+        }
+        child{
+            g{
+                male,
+                name={Giuseppe \surn{Antolini}},
+                birth={1872}{},
+            }
+        }
+    }
+}
+\end{genealogypicture}
+
+\end{center}
+\end{midpage}
+
+\end{document}
