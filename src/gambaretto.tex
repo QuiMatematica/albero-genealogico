@@ -23,68 +23,96 @@
 \begin{midpage}
 \begin{center}
 
-\begin{genealogypicture}[
-%    timeflow=right,
-%    node size=3.5cm,
-%    node size=2.8cm,
-    processing=database,
-    database format=full,
-    node size=3.8cm,
-    level size=2.8cm,
-    level distance=6mm,
-    list separators hang=3mm,
-    name font=\bfseries,
-    surn code={\textcolor{black!50!black}{#1}},
-    place text={\newline}{},
-    date format=d month yyyy,
-    tcbset={male/.style={colframe=blue,colback=blue!5},
-    female/.style={colframe=red,colback=red!5}},
-    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
-        halign=left,before upper=\parskip1pt,
-        \gtrDBsex,
-    },
-]
-sandclock
-{
-    child{
-        g{
-            male,
-            name={Giovanni \surn{Gambaretto}},
-            marriage={?}{Alessandra Salgarolo},
-            death={/1873}{},
+    \begin{tikzpicture}
+        \gtrset{
+            processing=database,
+            database format=full,
+            node size=3.5cm,
+            level size=2.8cm,
+            level distance=6mm,
+            list separators hang=3mm,
+            name font=\bfseries,
+            surn code={\textcolor{black!50!black}{#1}},
+            place text={\newline}{},
+            date format=d month yyyy,
+            tcbset={male/.style={colframe=blue,colback=blue!5},
+            female/.style={colframe=red,colback=red!5}},
+            box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+                halign=left,before upper=\parskip1pt,
+                \gtrDBsex,
+            },
         }
-        child{
-            g{
-                male,
-                name={Giacomo \surn{Gambaretto}},
-                birth={1844}{},
-                marriage={1873-02-24}{Santa Vittoria \surn{Gambaretto}},
-                death={/1900}
-            }
-            c{
-                female,
-                name={Massimina `Balsemina' \surn{Gambaretto}},
-                birth={1874-07-13}{Contrà Gambaretti},
-                marriage={1891-08-02}{Domenico Cristofari}
+        \genealogytree[id suffix=@a]
+        {
+            child{
+                g{
+                    male,
+                    name={Giovanni \surn{Gambaretto}},
+                    marriage={?}{Alessandra Salgarolo},
+                    death={/1873}{},
+                }
+                child{
+                    g{
+                        male,
+                        name={Angelo \surn{Gambaretto}},
+                        marriage={1885-02-07}{Anna Cristofari}
+                    }
+                }
+                child{
+                    g{
+                        male,
+                        name={Antonio \surn{Gambaretto}},
+                        marriage={1879-11-27}{}
+                    }
+                }
+                child{
+                    g{
+                        male,
+                        name={Giacomo \surn{Gambaretto}},
+                        birth={1844}{},
+                        marriage={1873-02-24}{Santa Vittoria \surn{Gambaretto}},
+                        death={/1900}
+                    }
+                    p[id=Santa, phantom*]{
+                        female,
+                        name={Santa Vittoria \surn{Gambaretto}}
+                    }
+                    c{
+                        female,
+                        name={Balsemina (Massimina, Massemina) \surn{Gambaretto}},
+                        birth={1874-07-13}{Contrà Gambaretti},
+                        marriage={1891-08-02}{Domenico Cristofari}
+                    }
+                    c{
+                        female,
+                        name={Teresa \surn{Gambaretto}}
+                    }
+                }
             }
         }
-        child{
-            g{
-                male,
-                name={Angelo \surn{Gambaretto}},
-                marriage={1885-02-07}{Anna Cristofari}
+        \genealogytree[id suffix=@b, set position=Santa@b at Santa@a ]
+        {
+            child{
+                g{
+                    male,
+                    name={Alessandro \surn{Gambaretto}},
+                }
+                p{
+                    female,
+                    name={Speranza \surn{Gambaretto}}
+                }
+                child{
+                    g[id=Santa]{
+                        female,
+                        name={Santa Vittoria \surn{Gambaretto}},
+                        birth={1848/1849}{},
+                        marriage={1873-02-24}{Giacomo \surn{Gambaretto}},
+                        death={/1900}{}
+                    }
+                }
             }
         }
-        child{
-            g{
-                male,
-                name={Antonio \surn{Gambaretto}},
-                marriage={1879-11-27}{}
-            }
-        }
-    }
-}
-\end{genealogypicture}
+    \end{tikzpicture}
 
 \end{center}
 \end{midpage}
