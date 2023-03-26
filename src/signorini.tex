@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[a2paper, landscape, total={50cm, 38cm}]{geometry}
+\usepackage[a1paper, landscape, total={76cm, 50cm}]{geometry}
 \usepackage[all]{genealogytree}
 \usepackage[italian]{babel}
 \usepackage{fancyhdr}
@@ -60,12 +60,57 @@ sandclock
                     birth={1723-06-02}{Grezzana},
                     marriage={1754-11-28}{Alcenago \newline Bortola Bomberi},
                 }
-                c[id=Arcangelo1771]{
-                    male,
-                    name={Arcangelo \surn{Signorini}},
-                    birth={1771-04-21}{Grezzana},
-                    marriage={Paola Nicolis}{},
-                    death={1869-09-23}{Quinto}
+                child{
+                    g[id=Arcangelo1771]{
+                        male,
+                        name={Arcangelo Giuseppe \surn{Signorini}},
+                        birth={1771-04-21}{Grezzana},
+                        marriage={Paola Nicolis}{},
+                        death={1869-09-23}{Quinto}
+                    }
+                    child{
+                        g{
+                            female,
+                            name={Luigia \surn{Signorini}},
+                            birth={1802-09-25}{},
+                            note={Parentela non certa.}
+                        }
+                    }
+                    child{
+                        g{
+                            male,
+                            name={Giacomo \surn{Signorini}},
+                            birth={1809-05-06}{Grezzana}
+                        }
+                    }
+                    child{
+                        g{
+                            male,
+                            name={Luigi \surn{Signorini}},
+                            birth={1812-10-03}{Grezzana}
+                        }
+                    }
+                    child{
+                        g{
+                            male,
+                            name={Francesco \surn{Signorini}},
+                            birth={1816-07-03}{Grezzana}
+                        }
+                    }
+                    child{
+                        g{
+                            female,
+                            name={Rosa \surn{Signorini}},
+                            birth={1819-05-06}{Grezzana}
+                        }
+                    }
+                    child{
+                        g{
+                            male,
+                            name={Francesco \surn{Signorini}},
+                            birth={1822-07-03}{Quinto}
+                        }
+                    }
                 }
                 child{
                     g[id=Benedetto1774]{
@@ -78,6 +123,7 @@ sandclock
                         female,
                         name={Maria \surn{Signorini}},
                         birth={1803-01-06}{Quinto},
+                        marriage={1823-11-07}{Andrea Cavejari}
                     }
                     c[id=Bortola1806]{
                         female,

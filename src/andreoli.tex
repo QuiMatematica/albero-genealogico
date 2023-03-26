@@ -43,6 +43,8 @@
         halign=left,before upper=\parskip1pt,
         \gtrDBsex,
     },
+    options for family={LuigiFam}{extra edges={Carolina,Luigi}{Elisabetta1,Elisabetta2}{}},
+    options for family={Elisabetta1Fam}{extra edges={Albino,Elisabetta1}{}{}},
 ]
 sandclock
 {
@@ -58,8 +60,33 @@ sandclock
             g{
                 male,
                 name={Gaetano \surn{Andreoli}},
-                birth={1845/1846}{},
-                death={1909}{},
+                birth={1845/1846}{S. Maria in Stelle},
+                marriage={/1879}{Anna Maria Bodini},
+                death={1909-02-18}{Novaglie},
+            }
+            c{
+                male,
+                name={Giovanni \surn{Andreoli}},
+                birth={1881}{Novaglie},
+                death={1918-08-02}{Bon Rodros (Ungheria)}
+            }
+            c{
+                female,
+                name={Maria Maddalena \surn{Andreoli}},
+                birth={1878/1879}{Novaglie}
+                death={1886-11-23}{Novaglie}
+            }
+            c{
+                female,
+                name={Maria Maddalena \surn{Andreoli}},
+                birth={1888-02-01}{Novaglie},
+                marriage={1908-10-11}{S. Maria in Stelle \newline Emilio Liboni}
+            }
+            c{
+                male,
+                name={Luigi Marco \surn{Andreoli}},
+                birth={1896}{S. Maria in Stelle},
+                death={1924-10-18}{Novaglie},
             }
         }
         child{
@@ -70,12 +97,53 @@ sandclock
                 marriage={/1886}{Carolina Salvagno},
                 death={1886-02-17}{Novaglie (S. Maria in Stelle)},
             }
+            p[id=Carolina]{
+                female,
+                name={Carolina \surn{Salvagno}},
+                birth={1860}{},
+                death={1922-12-13}{},
+            }
             c{
                 female,
-                name={Virginia Lucia \surn{Andreoli}},
-                birth={1883-08-06}{Novaglie (S. Maria in Stelle)},
-                marriage={?}{S. Maria in Stelle \newline Albino Signorini},
-                death={1918-01-21}{Novaglie (S. Maria in Stelle)},
+                name={Giuseppina \surn{Andreoli}},
+                birth={1886-05-22}{S. Maria in Stelle},
+                marriage={?}{Isidoro Signorini}
+            }
+            child{
+                g{
+                    female,
+                    name={Virginia Lucia \surn{Andreoli}},
+                    birth={1883-08-06}{Novaglie (S. Maria in Stelle)},
+                    marriage={?}{S. Maria in Stelle \newline Albino Signorini},
+                    death={1918-01-21}{Novaglie (S. Maria in Stelle)},
+                }
+                p[id=Albino]{
+                    male,
+                    name={Albino \surn{Signorini}}
+                }
+            }
+        }
+        child[id=LuigiFam]{
+            g[id=Luigi]{
+                male,
+                name={Luigi \surn{Andreoli}},
+                birth={1853-07-13}{},
+                marriage={1886/1889}{Carolina Salvagno},
+                death={1935/}{},
+            }
+            child[id=Elisabetta1Fam]{
+                g[id=Elisabetta1]{
+                    female,
+                    name={Elisabetta Maria \surn{Andreoli}},
+                    birth={1891-09-22}{S. Maria in Stelle},
+                    marriage={1920-04-18}{Albino Signorini},
+                    death={1935-11-03}{S. Michele Extra}
+                }
+            }
+            c[id=Elisabetta2]{
+                female,
+                name={Elisabetta Maria \surn{Andreoli}},
+                birth={1889-12-20}{Novaglie}
             }
         }
     }
