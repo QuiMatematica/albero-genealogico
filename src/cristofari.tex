@@ -1,0 +1,162 @@
+\documentclass{article}
+%\usepackage[a1paper, landscape, total={76cm, 55cm}]{geometry}
+\usepackage[a2paper, landscape, total={38cm, 55cm}]{geometry}
+%\usepackage[a3paper, landscape, total={38cm, 25cm}]{geometry}
+%\usepackage[a4paper, landscape, total={25cm, 17cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{midpage}
+\begin{center}
+
+\begin{genealogypicture}[
+%    timeflow=right,
+%    node size=3.5cm,
+%    node size=2.8cm,
+    processing=database,
+    database format=full,
+    node size=3.8cm,
+    level size=2.8cm,
+    level distance=6mm,
+    list separators hang=3mm,
+    name font=\bfseries,
+    surn code={\textcolor{black!50!black}{#1}},
+    place text={\newline}{},
+    date format=d month yyyy,
+    tcbset={male/.style={colframe=blue,colback=blue!5},
+    female/.style={colframe=red,colback=red!5}},
+    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+        halign=left,before upper=\parskip1pt,
+        \gtrDBsex,
+    },
+]
+sandclock
+{
+    child{
+        g{
+            male,
+            name={Luigi \surn{Cristofari}},
+            marriage={?}{Vincenza Aldighieri},
+            death={/1877}{}
+        }
+        child{
+            g{
+                male,
+                name={Giovanni Battista \surn{Cristofari}},
+                birth={1813/1814}{S. Giovanni Ilarione},
+                marriage={?}{Elisa Ciman},
+                death={1877-12-01}{S Giovanni Ilarione}
+            }
+            child{
+                g{
+                    male,
+                    name={Gaetano \surn{Cristofari}},
+                    birth={1831/1832}{S. Giovanni Ilarione},
+                    marriage={?}{Domenica Marcigaglia},
+                    death={1915-04-22}{S. Giovanni Ilarione}
+                }
+                child{
+                    g{
+                        male,
+                        name={Domenico \surn{Cristofari}},
+                        birth={1868}{},
+                        marriage={1891-08-02}{Massimina `Balsemina' Gambaretto},
+                        death={1942-11-08}{Contrada Gamberetti di Sotto},
+                    }
+                    c{
+                        male,
+                        name={Marco Evangelista \surn{Cristofari}},
+                        birth={1893-04-25}{}
+                    }
+                    c{
+                        male,
+                        name={Giacomo Gaetano \surn{Cristofari}},
+                        birth={1895-06-12}{}
+                    }
+                    c{
+                        female,
+                        name={Santa Maria \surn{Cristofari}},
+                        birth={1898-01-06}{}
+                    }
+                    c{
+                        female,
+                        name={Domenica \surn{Cristofari}},
+                        birth={1900-02-10}{S. Giovanni Ilarione}
+                    }
+                    c{
+                        female,
+                        name={Santa \surn{Cristofari}},
+                        birth={1907-07-07}{S. Giovanni Ilarione},
+                        marriage={1931-11-07}{S. Caterina in Villa \newline Oreste Aldighieri},
+                        death={1987-10-12}{Verona}
+                    }
+                    c{
+                        female,
+                        name={Anna \surn{Cristofari}},
+                        birth={1909-08-06}{}
+                    }
+                    c{
+                        female,
+                        name={Palma \surn{Cristofari}},
+                        birth={1912-04-01}{}
+                    }
+                    c{
+                        male,
+                        name={Antonio \surn{Cristofari}}
+                    }
+                    c{
+                        female,
+                        name={Carolina \surn{Cristofari}}
+                    }
+                }
+                c{
+                    female,
+                    name={Anna \surn{Cristofari}},
+                    marriage={1885-02-07}{Angelo Gambaretto}
+                }
+                c{
+                    male,
+                    name={Angelo \surn{Cristofari}},
+                    death={1895-12-02}{}
+                }
+                c{
+                    male,
+                    name={Massimino Giuseppe \surn{Cristofari}}
+                }
+            }
+            c{
+                female,
+                name={Maria \surn{Cristofari}},
+                death={1877-02-04}{}
+            }
+            c{
+                male,
+                name={Luigi \surn{Cristofari}}
+            }
+        }
+        c{
+            male,
+            name={Andrea \surn{Cristofari}}
+        }
+    }
+}
+\end{genealogypicture}
+
+\end{center}
+\end{midpage}
+
+\end{document}
