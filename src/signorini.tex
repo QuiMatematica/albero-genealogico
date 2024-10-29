@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[a1paper, landscape, total={76cm, 50cm}]{geometry}
+\usepackage[a0paper, landscape, total={100cm, 50cm}]{geometry}
 \usepackage[all]{genealogytree}
 \usepackage[italian]{babel}
 \usepackage{fancyhdr}
@@ -23,8 +23,11 @@
 \begin{genealogypicture}[
     processing=database,
     database format=full,
-    node size=3.5cm,
-    level size=2.8cm,
+%    node size=3.5cm,
+%    level size=2.8cm,
+    timeflow=right,
+    node size=1.7cm,
+    level size=3.5cm,
     level distance=6mm,
     list separators hang=3mm,
     name font=\bfseries,
@@ -205,15 +208,55 @@ sandclock
                                 g{
                                     female,
                                     name={Luigia \surn{Signorini}},
-                                    birth={1802-09-25}{},
-                                    note={Parentela non certa.}
+                                    birth={1802-09-24}{Quinto},
+                                    marriage={Luigi Pedrighi}{}
+                                }
+                            }
+                            child{
+                                g{
+                                    female,
+                                    name={Santa \surn{Signorini}},
+                                    birth={1807-03-29}{Grezzana},
                                 }
                             }
                             child{
                                 g{
                                     male,
                                     name={Giacomo \surn{Signorini}},
-                                    birth={1809-05-06}{Grezzana}
+                                    birth={1809-05-06}{Grezzana},
+                                    marriage={1834-04-29}{Angela Anechini}
+                                }
+                                child{
+                                    g{
+                                        male,
+                                        name={Paolo \surn{Signorini}},
+                                        birth={1835-01-22}{Quinto},
+                                    }
+                                }
+                                child{
+                                    g{
+                                        male,
+                                        name={Domenico \surn{Signorini}},
+                                        birth={1836-02-18}{Quinto},
+                                    }
+                                }
+                                child{
+                                    g{
+                                        female,
+                                        name={Paola \surn{Signorini}},
+                                    }
+                                }
+                                child{
+                                    g{
+                                        female,
+                                        name={Angela \surn{Signorini}},
+                                    }
+                                }
+                                child{
+                                    g{
+                                        male,
+                                        name={Arcangelo \surn{Signorini}},
+                                    }
                                 }
                             }
                             child{
