@@ -1,0 +1,345 @@
+\documentclass{article}
+\usepackage[a1paper, landscape, total={76cm, 52cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{figure}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g{
+                male,
+                name={Pietro \surn{Signorini}},
+                marriage={Maddalena}{},
+            }
+            c{
+                male,
+                name={Francesco \surn{Signorini}},
+                birth={1701-07-02}{Grezzana},
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.39\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g{
+                male,
+                name={Paolo \surn{Signorini}},
+                marriage={Teresa Tommasi}{},
+            }
+            c{
+                female,
+                name={Angela \surn{Signorini}},
+                birth={1809-08-14}{},
+            }
+            c{
+                female,
+                name={Prassede Maria \surn{Signorini}},
+                birth={1815-03-25}{Grezzana},
+                marriage={1835-03-03}{Luigi Signorini}
+            }
+            c{
+                male,
+                name={Domenico \surn{Signorini}},
+                birth={1818-11-28}{},
+            }
+            c{
+                female,
+                name={Celeste Arcangela \surn{Signorini}},
+                birth={1820-11-01}{},
+            }
+            c{
+                female,
+                name={Rosa \surn{Signorini}},
+                birth={1823-03-07}{},
+            }
+            c{
+                female,
+                name={Maria Anna \surn{Signorini}},
+                birth={1825-05-03}{},
+            }
+            c{
+                female,
+                name={Gio Batta \surn{Signorini}},
+                birth={1827-11-24}{},
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.39\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g{
+                male,
+                name={Nicola \surn{Signorini}},
+                marriage={Celeste Marassoni}{},
+            }
+            child{
+                g{
+                    male,
+                    name={Antonio \surn{Signorini}},
+                    birth={1790-10-18}{Alcenago},
+                    marriage={Maria Anna Righetti}{Stella Pernigo},
+                }
+                c{
+                    female,
+                    name={Celeste Pasqua \surn{Signorini}}
+                    birth={1814-03-24}{Grezzana},
+                    marriage={Domenico Malizia}{},
+                }
+                c{
+                    male,
+                    name={Nicola \surn{Signorini}}
+                    birth={1818-10-04}{Grezzana},
+                }
+                child{
+                    g{
+                        male,
+                        name={Lorenzo \surn{Signorini}}
+                        birth={1821-08-17}{Grezzana},
+                        marriage={1850-04-09}{Cerro \newline Anna Poggoli},
+                    }
+                    c{
+                        female,
+                        name={Marianna \surn{Signorini}},
+                        birth={1851-08-03}{Grezzana},
+                    }
+                    c{
+                        female,
+                        name={Rosa \surn{Signorini}},
+                        birth={1854-02-13}{Grezzana},
+                    }
+                }
+                c{
+                    female,
+                    name={Paola \surn{Signorini}}
+                    birth={1824-10-20}{Grezzana},
+                    marriage={1847-10-26}{Alcenago \newline Stefano Ballini},
+                }
+                child{
+                    g{
+                        male,
+                        name={Pietro Paolo \surn{Signorini}}
+                        birth={1832-07-16}{Grezzana},
+                        marriage={1854-02-08}{Grezzana \newline Maria Quintarelli},
+                    }
+                    c{
+                        male,
+                        name={Santo Gregorio \surn{Signorini}}
+                        birth={1854-11-17}{Grezzana},
+                    }
+                }
+                c{
+                    male,
+                    name={Angelo \surn{Signorini}}
+                    birth={1839-03-16}{Alcenago},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}\label{fig:figure}
+\end{figure}
+
+
+
+\begin{figure}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g{
+                male,
+                name={Benedetto \surn{Signorini}},
+                marriage={Lucia Nicoli}{},
+            }
+            child{
+                g{
+                    male,
+                    name={Giuseppe \surn{Signorini}},
+                    birth={1773-02-10}{Alcenago},
+                    marriage={Teresa Tommasi}{},
+                }
+                c{
+                    female,
+                    name={Catarina \surn{Signorini}},
+                    birth={1806-01-21}{},
+                }
+                c{
+                    female,
+                    name={Paola \surn{Signorini}},
+                    birth={1812-01-25}{},
+                    marriage={Malizia}{},
+                }
+                child{
+                    g{
+                        male,
+                        name={Nicola \surn{Signorini}},
+                        birth={1814-04-01}{Alcenago},
+                        marriage={1832-10-23}{Grezzana \newline Pasqua Martini},
+                    }
+                    c{
+                        male,
+                        name={Giuseppe Lino \surn{Signorini}},
+                        birth={1834-09-22}{Grezzana},
+                    }
+                    c{
+                        male,
+                        name={Giacomo Raffaele \surn{Signorini}},
+                        birth={1839-01-31}{Grezzana},
+                    }
+                    c{
+                        female,
+                        name={Regina Teresa \surn{Signorini}},
+                        birth={1842-01-31}{Grezzana},
+                    }
+                    c{
+                        female,
+                        name={Marianna \surn{Signorini}},
+                        birth={1845-03-30}{Grezzana},
+                    }
+                    c{
+                        male,
+                        name={Tommaso Casimiro \surn{Signorini}},
+                        birth={1847-03-04}{Grezzana},
+                    }
+                    c{
+                        male,
+                        name={Carolina Luigia \surn{Signorini}},
+                        birth={1849-11-04}{Grezzana},
+                    }
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+\end{minipage}\label{fig:figure2}
+\end{figure}
+
+\end{document}
