@@ -525,6 +525,67 @@
 \begin{minipage}[b]{0.39\textwidth}
 \centering
 
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g{
+                male,
+                name={Nicola \surn{Signorini}},
+                marriage={Clotilde Avesani}{},
+            }
+            child{
+                g{
+                    male,
+                    name={Pietro Antonio \surn{Signorini}},
+                    birth={1867-12-03}{Verona},
+                    marriage={1870-04}{Melani Ferrari \newline 15 giugno 1874 \newline Marietta Ferrari},
+                }
+                c{
+                    male,
+                    name={Pietro \surn{Signorini}},
+                    birth={1892-11-29}{},
+                    death={1892-12-25}{},
+                }
+                c{
+                    female,
+                    name={Anna \surn{Signorini}},
+                    birth={1893-10-20}{},
+                    death={1893-10-21}{},
+                }
+                c{
+                    male,
+                    name={Giacomo \surn{Signorini}},
+                    birth={1894-07-25}{},
+                    death={1894-07-28}{},
+                }
+                c{
+                    male,
+                    name={Giovanni \surn{Signorini}},
+                    birth={1896-06-27}{},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
 \end{minipage}\label{fig:figure3}
 \end{figure}
 
