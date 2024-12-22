@@ -482,7 +482,65 @@
 
 \end{minipage}
 \hfill
-\begin{minipage}[b]{0.39\textwidth}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g{
+                male,
+                name={Giuseppe \surn{Signorini}},
+                marriage={Gaetana Vedovi}{},
+            }
+            child{
+                g{
+                    male,
+                    name={Giovanni \surn{Signorini}},
+                    birth={1882-12-03}{Zevio},
+                    marriage={1904-09-07}{Rosa Giacomelli},
+                }
+                c{
+                    female,
+                    name={Guglielma \surn{Signorini}},
+                    birth={Verona}{}
+                }
+                c{
+                    male,
+                    name={Guglielmo \surn{Signorini}},
+                    birth={19008-07-19}{Illasi},
+                }
+                c{
+                    male,
+                    name={Giuseppe \surn{Signorini}},
+                    birth={1910-09-29}{Verona},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
 \centering
 
     \begin{genealogypicture}[
