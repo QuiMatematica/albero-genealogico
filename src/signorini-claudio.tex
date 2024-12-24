@@ -1,6 +1,5 @@
 \documentclass{article}
-\usepackage[a1paper, total={50cm, 76cm}]{geometry}
-%\usepackage[a2paper, landscape, total={50cm, 38cm}]{geometry}
+\usepackage[a0paper, total={100cm, 76cm}]{geometry}
 \usepackage[all]{genealogytree}
 \usepackage[italian]{babel}
 \usepackage{fancyhdr}
@@ -341,21 +340,71 @@ sandclock
                     }
                 }
                 parent[id=salv_fam]{
-                    g[id=CarolinaXxxx]{
+                    g[id=Carolina1860]{
                         female,
                         name={Carolina \surn{Salvagno}},
-                        birth={1860-04-07}{S. Maria in Stelle},
+                        birth={1860-04-07}{Novaglie},
                         death={1922-12-13}{S. Michele Extra},
                     }
-                    p[id=PaoloXxxx]{
-                        male,
-                        name={Paolo \surn{Salvagno}},
-                        birth={/1856}{},
-                        death={1893}{S. Maria in Stelle},
+                    parent{
+                        g[id=Paolo1830]{
+                            male,
+                            name={Paolo \surn{Salvagno}},
+                            birth={1830-12-24}{Novaglie},
+                            death={1893}{S. Maria in Stelle},
+                        }
+                        p{
+                            male,
+                            name={Antonio \surn{Salvagno}}
+                        }
+                        p{
+                            female,
+                            name={Teresa \surn{Signorini}}
+                        }
                     }
-                    p[id=LuciaXxxx]{
-                        female,
-                        name={Lucia \surn{Villafranca}}
+                    parent{
+                        g[id=LuciaXxxx]{
+                            female,
+                            name={Lucia \surn{Villafranca}},
+                            birth={1835-12-15}{Novaglie},
+                            death={1902-02-06}{Novaglie},
+                        }
+                        parent{
+                            g{
+                                male,
+                                name={Pietro \surn{Villafranca}},
+                                birth={1802-03-17}{Novaglie},
+                                death={1871-08-08}{Novaglie},
+                            }
+                            parent{
+                                g{
+                                    male,
+                                    name={Giovanni Battista \surn{Villafranca}}
+                                }
+                            }
+                            parent{
+                                g{
+                                    female,
+                                    name={Giovanna \surn{Modosti}}
+                                }
+                            }
+                        }
+                        parent{
+                            g{
+                                female,
+                                name={Maria \surn{Burro}},
+                                birth={1803-03-03}{Negrar},
+                                death={1874-12-13}{Novaglie},
+                            }
+                            p{
+                                male,
+                                name={Lorenzo \surn{Burro}}
+                            }
+                            p{
+                                female,
+                                name={Felicita \surn{Folipi}}
+                            }
+                        }
                     }
                 }
             }
@@ -371,7 +420,7 @@ sandclock
                 g[id=Clementina1865]{
                     female,
                     name={Clementina \surn{Salvagno}},
-                    birth={1865}{Novaglie},
+                    birth={1865-05-23}{Novaglie},
                     death={1916-06-24}{Quinto di Valpantena},
                 }
             }
