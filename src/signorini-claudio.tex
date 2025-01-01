@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage[a0paper, total={100cm, 76cm}]{geometry}
+\usepackage[a0paper, total={76cm, 100cm}]{geometry}
 \usepackage[all]{genealogytree}
 \usepackage[italian]{babel}
 \usepackage{fancyhdr}
@@ -323,20 +323,48 @@ sandclock
                     g[id=GiuseppeXxxx]{
                         male,
                         name={Giuseppe \surn{Andreoli}},
-                        birth={1854/1855}{Novaglie},
+                        birth={1855-04-26}{Novaglie},
                         death={1886-02-17}{Novaglie},
                     }
-                    p[id=GiovanniBattistaXxxx]{
-                        male,
-                        name={Giovanni Battista \surn{Andreoli}},
-                        birth={/1846}{},
-                        death={1854/1886}{},
+                    parent{
+                        g[id=GiovanniBattista1815]{
+                            male,
+                            name={Giovanni Battista \surn{Andreoli}},
+                            birth={1815-07-28}{Novaglie},
+                            death={1873-01-06}{},
+                        }
+                        parent{
+                            g[id=GiovanniBattista]{
+                                male,
+                                name={Giovanni Battista \surn{Andreoli}},
+                            }
+                        }
+                        parent{
+                            g[id=Elena]{
+                                female,
+                                name={Elena \surn{Marani}}
+                            }
+                        }
                     }
-                    p[id=DomenicaXxxx]{
-                        female,
-                        name={Domenica \surn{Corso}},
-                        birth={/1846}{},
-                        death={1854/1886}{},
+                    parent{
+                        g[id=Domenica1822]{
+                            female,
+                            name={Domenica \surn{Corso}},
+                            birth={1822-02-08}{Novaglie},
+                            death={1873-05-30}{},
+                        }
+                        parent{
+                            g[id=Domenico]{
+                                male,
+                                name={Domenico \surn{Corso}},
+                            }
+                        }
+                        parent{
+                            g[id=Teresa]{
+                                female,
+                                name={Teresa \surn{Toffoli}},
+                            }
+                        }
                     }
                 }
                 parent[id=salv_fam]{
