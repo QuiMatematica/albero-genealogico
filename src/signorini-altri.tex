@@ -59,6 +59,11 @@
                     name={Francesco \surn{Signorini}},
                     birth={1701-07-02}{Grezzana},
                 }
+                c{
+                    female,
+                    name={Caterina \surn{Signorini}},
+                    death={1703-05-12}{Grezzana},
+                }
             }
         }
     }
@@ -588,7 +593,46 @@
 
 \end{minipage}
 \hfill
-\begin{minipage}[b]{0.39\textwidth}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g{
+                male,
+                name={Giovanni \surn{Signorini}},
+            }
+            c{
+                female,
+                name={Caterina \surn{Signorini}},
+                death={105-03-03}{Grezzana},
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.19\textwidth}
 \centering
 
     \begin{genealogypicture}[
