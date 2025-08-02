@@ -468,15 +468,56 @@ sandclock
                     birth={1863-05-03}{Poiano},
                     death={1938-09-03}{Quinto di Valpantena},
                 }
-                p[id=PaoloXxxx]{
-                    male,
-                    name={Paolo \surn{Antolini}},
-                    birth={/1863}{},
-                    death={1894}{Quinto di Valpantena},
+                parent{
+                    g[id=PaoloAntolini1830]{
+                        male,
+                        name={Paolo \surn{Antolini}},
+                        birth={1830-04-18}{Valgatara},
+                        death={1894}{Quinto di Valpantena},
+                    }
+                    parent{
+                        g[id=Lorenzo1804]{
+                            male,
+                            name={Lorenzo \surn{Antolini}},
+                            birth={1804-03-03}{Poiano}
+                        }
+                        parent{
+                            g{
+                                male,
+                                name={Domenico \surn{Antolini}}
+                            }
+                        }
+                        parent{
+                            g{
+                                female,
+                                name={Catterina}
+                            }
+                        }
+                    }
+                    parent{
+                        g{
+                            female,
+                            name={Santa Angela \surn{Castellani}},
+                            birth={1804-12-30}{Valgatara},
+                        }
+                        parent{
+                            g{
+                                male,
+                                name={Santo \surn{Castellani}}
+                            }
+                        }
+                        parent{
+                            g{
+                                female,
+                                name={Angela}
+                            }
+                        }
+                    }
                 }
                 p[id=RosaXxxx]{
                     female,
                     name={Rosa \surn{Righetti}},
+                    birth={1836-03-02}{Negrar},
                     death={/1888}{},
                 }
             }
