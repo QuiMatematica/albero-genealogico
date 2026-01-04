@@ -1,0 +1,222 @@
+\documentclass{article}
+\usepackage[a0paper, landscape, total={104cm, 68cm}]{geometry}
+\usepackage[all]{genealogytree}
+\usepackage[italian]{babel}
+\usepackage{fancyhdr}
+\usepackage{midpage}
+
+\gtrset{
+    highlight/.style={box={colback=yellow!20,no shadow,fuzzy halo}},
+    language=italian
+}
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+\cfoot{Compilato da Claudio Signorini - \today}
+
+\begin{document}
+
+\begin{midpage}
+\begin{center}
+
+\begin{genealogypicture}[
+    processing=database,
+    database format=full,
+    node size=3.5cm,
+    level size=2.8cm,
+    level distance=6mm,
+    list separators hang=3mm,
+    name font=\bfseries,
+    surn code={\textcolor{black!50!black}{#1}},
+    place text={\newline}{},
+    date format=d month yyyy,
+    tcbset={male/.style={colframe=blue,colback=blue!5},
+    female/.style={colframe=red,colback=red!5}},
+    box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+        halign=left,before upper=\parskip1pt,
+        \gtrDBsex,
+    },
+]
+sandclock
+{
+    child{
+        g[]{
+            male,
+            name={Antonio \surn{Salvagno}},
+            marriage={Teresa Signorini}{},
+        }
+        child{
+            g[]{
+                male,
+                name={Paolo \surn{Salvagno}},
+                birth={1830-14-24}{Novaglie},
+                marriage={1855-02-14}{Villafranca Lucia},
+                death={1893}{S. Maria in Stelle}
+            }
+            child{
+                g[]{
+                    female,
+                    name={Maria Teresa \surn{Salvagno}},
+                    birth={1856-01-18}{Novaglie},
+                    marriage={1879-04-27}{Innocente Andreoli},
+                    death={1909-12-24}{Novaglie},
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Carolina \surn{Salvagno}},
+                    birth={1860-04-03}{Novaglie},
+                    marriage={1886}{Giuseppe Andreoli \\ \gtrsymMarried~1889 \newline \hspace*{3mm} Luigi Andreoli},
+                    death={1922-12-13}{S. Michele Extra},
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Giuseppina \surn{Salvagno}},
+                    birth={1862-03-10}{Novaglie},
+                    marriage={1884-03-02}{Giovanni Prati \\ \gtrsymMarried~17 Gennaio 1890 \newline \hspace*{3mm} Felice Zamperini},
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Clementina \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    male,
+                    name={Luigi \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    male,
+                    name={Virgilio \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Virginia \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    male,
+                    name={Lodovico Giacomo \surn{Salvagno}}
+                }
+            }
+        }
+        child{
+            g[]{
+                male,
+                name={Angelo \surn{Salvagno}},
+                birth={1832-10-05}{Novaglie},
+                marriage={1858-02-23}{Domenica Antolini},
+                death={1908-03-20}{}
+            }
+            child{
+                g[]{
+                    female,
+                    name={Giuseppina \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    male,
+                    name={Eliseo \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Teresa \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    male,
+                    name={Gaetano \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Brigita \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    male,
+                    name={Gioacchino \surn{Salvagno}}
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Veronica \surn{Salvagno}}
+                }
+            }
+        }
+        child{
+            g[]{
+                male,
+                name={Giovanni \surn{Salvagno}},
+                birth={1835-01-16}{Novaglie},
+                marriage={1857-01-26}{Maria Corso},
+            }
+            child{
+                g[]{
+                    male,
+                    name={Giuseppe \surn{Salvagno}},
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Amalia \surn{Salvagno}},
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Maria \surn{Salvagno}},
+                }
+            }
+            child{
+                g[]{
+                    male,
+                    name={Luigi \surn{Salvagno}},
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Giulia Angela \surn{Salvagno}},
+                }
+            }
+            child{
+                g[]{
+                    female,
+                    name={Giuditta Teresa \surn{Salvagno}},
+                }
+            }
+        }
+        c[]{
+            male,
+            name={Eugenio \surn{Salvagno}},
+            birth={1838-01-15}{Novaglie},
+            death={1908}{},
+        }
+    }
+}
+\end{genealogypicture}
+
+\end{center}
+\end{midpage}
+
+\end{document}
