@@ -188,19 +188,19 @@
                 }
                 c{
                     female,
-                    name={Celeste Pasqua \surn{Signorini}}
+                    name={Celeste Pasqua \surn{Signorini}},
                     birth={1814-03-24}{Grezzana},
                     marriage={Domenico Malizia}{},
                 }
                 c{
                     male,
-                    name={Nicola \surn{Signorini}}
+                    name={Nicola \surn{Signorini}},
                     birth={1818-10-04}{Grezzana},
                 }
                 child{
                     g{
                         male,
-                        name={Lorenzo \surn{Signorini}}
+                        name={Lorenzo \surn{Signorini}},
                         birth={1821-08-17}{Grezzana},
                         marriage={1850-04-09}{Cerro \newline Anna Poggoli},
                     }
@@ -217,26 +217,26 @@
                 }
                 c{
                     female,
-                    name={Paola \surn{Signorini}}
+                    name={Paola \surn{Signorini}},
                     birth={1824-10-20}{Grezzana},
                     marriage={1847-10-26}{Alcenago \newline Stefano Ballini},
                 }
                 child{
                     g{
                         male,
-                        name={Pietro Paolo \surn{Signorini}}
+                        name={Pietro Paolo \surn{Signorini}},
                         birth={1832-07-16}{Grezzana},
                         marriage={1854-02-08}{Grezzana \newline Maria Quintarelli},
                     }
                     c{
                         male,
-                        name={Santo Gregorio \surn{Signorini}}
+                        name={Santo Gregorio \surn{Signorini}},
                         birth={1854-11-17}{Grezzana},
                     }
                 }
                 c{
                     male,
-                    name={Angelo \surn{Signorini}}
+                    name={Angelo \surn{Signorini}},
                     birth={1839-03-16}{Alcenago},
                 }
             }
@@ -278,6 +278,57 @@
                 male,
                 name={Benedetto \surn{Signorini}},
                 marriage={Lucia Nicoli}{},
+            }
+            child{
+                g{
+                    male,
+                    name={Angelo \surn{Signorini}},
+                    birth={1775-01-02}{Alcenago},
+                    marriage={1818-11-07}{Alcenago \newline Ianocinta? Sturzoni?}
+                }
+            }
+            child{
+                g{
+                    male,
+                    name={Domenico \surn{Signorini}},
+                    birth={1781-05-03}{Alcenago},
+                    marriage={1806-11-11}{Negrar \newline Matilde Polesani},
+                }
+                child{
+                    g{
+                        male,
+                        name={Giacopo \surn{Signorini}},
+                        birth={1810-07-21}{Alcenago},
+                        marriage={1842-05-09}{Avesa \newline Angela Filippini},
+                    }
+                    c{
+                        female,
+                        name={Maria \surn{Signorini}},
+                        birth={1843-02-14}{Alcenago},
+                    }
+                    c{
+                        female,
+                        name={Regina \surn{Signorini}},
+                        birth={1844-06-03}{Alcenago},
+                    }
+                    c{
+                        female,
+                        name={Elisabetta \surn{Signorini}},
+                        birth={1845-11}{Alcenago},
+                    }
+                    c{
+                        female,
+                        name={Lucia \surn{Signorini}},
+                        birth={1848-01}{Alcenago},
+                    }
+                }
+                child{
+                    g{
+                        male,
+                        name={Benedetto \surn{Signorini}},
+                        birth={1828-07-16}{Alcenago},
+                    }
+                }
             }
             child{
                 g{
@@ -710,7 +761,70 @@
     }
     \end{genealogypicture}
 
-\end{minipage}\label{fig:figure3}
+\end{minipage}
+\label{fig:figure3}
+\end{figure}
+
+
+\begin{figure}
+\begin{minipage}[b]{0.19\textwidth}
+\centering
+
+    \begin{genealogypicture}[
+        processing=database,
+        database format=full,
+        node size=3.5cm,
+        level size=2.8cm,
+        level distance=6mm,
+        list separators hang=3mm,
+        name font=\bfseries,
+        surn code={\textcolor{black!50!black}{#1}},
+        place text={\newline}{},
+        date format=d month yyyy,
+        tcbset={male/.style={colframe=blue,colback=blue!5},
+        female/.style={colframe=red,colback=red!5}},
+        box={fit basedim=7pt,boxsep=2pt,segmentation style=solid,
+            halign=left,before upper=\parskip1pt,
+            \gtrDBsex,
+        },
+    ]
+    sandclock
+    {
+        child{
+            g{
+                male,
+                name={Francesco \surn{Signorini}},
+                marriage={Maria Anna Polesani}{},
+            }
+            c{
+                female,
+                name={Angela \surn{Signorini}},
+                birth={1795-10-18}{Alcenago},
+            }
+            child{
+                g{
+                    male,
+                    name={Giacinto \surn{Signorini}},
+                    birth={1814-04-15}{Alcenago},
+                    marriage={1834-04-15}{Fane \newline Maddalena Zantedeschi},
+                }
+                c{
+                    male,
+                    name={Benedetto \surn{Signorini}},
+                    birth={1835-02-01}{Alcenago},
+                }
+                c{
+                    female,
+                    name={Rosa \surn{Signorini}},
+                    birth={1836-06-19}{Alcenago},
+                }
+            }
+        }
+    }
+    \end{genealogypicture}
+
+\end{minipage}
+\label{fig:figure4}
 \end{figure}
 
 \end{document}
